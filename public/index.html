@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4beea4e20e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+    <title>Personal Page</title>
+  </head>
+  <body>
+    <div class="container h-[100%] bg-gray-300">
+      <!-- NAvBAr Start -->
+      <div
+        x-data="{ open: false }"
+        class="navbar bg-slate-600 shadow-md fixed w-full top-0 z-50"
+      >
+        <div class="container mx-auto flex justify-between items-center p-4">
+          <div class="bg-white p-2 rounded font-bold text-xl">
+            <span class="">Personal</span>
+            <span class="text-red-600">Page</span>
+          </div>
+          <button @click="open = !open" class="lg:hidden text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <div class="hidden lg:flex">
+            <ul class="lg:flex space-x-4 mr-5">
+              <li>
+                <a
+                  class="text-white font-semibold hover:text-black active:underline"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white font-semibold hover:text-black active:underline"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white font-semibold hover:text-black active:underline"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div x-show="open" class="lg:hidden">
+          <ul
+            class="bg-slate-400 p-4 justify-center items-center flex flex-col gap-2"
+          >
+            <li class="">
+              <a class="text-black font-semibold hover:underline" href="#home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="text-black font-semibold hover:underline" href="#about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-black font-semibold hover:underline"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- NavBar End -->
+      <!-- Main Content Start -->
+      <div
+        class="main flex flex-col justify-center items-center pt-[6rem] pb-28"
+        id="home"
+      >
+        <img
+          src="../img/rifa.jpg"
+          alt="rifaganteng"
+          class="w-[300px] rounded-full mt-[10vh] drop-shadow-lg"
+        />
+        <div class="text-4xl mt-1 font-semibold font-mono">
+          <span class="text-red-600">Hello</span>
+          <span class="text-blue-700">World!</span>
+        </div>
+        <p class="mt-4 font-semibold">My name is Muhammad Rifa Maulana Aziz</p>
+        <p class="font-semibold flex-wrap">
+          I am a Student Computer Network of SMKN 1 Cianjur
+        </p>
+        <button
+          class="pointer-events-none bg-gray-500 text-white p-2 rounded-md mt-3 font-semibold hover:bg-black active:bg-blue-600"
+        >
+          <a href="../img/rifa.jpg" download>Download CV <i>(soon)</i></a>
+        </button>
+      </div>
+      <!-- Main Content End -->
+      <!-- Secondary Content Start -->
+      <div
+        class="2nd container md:flex lg:flex pt-[115px] text-center items-center justify-center lg:gap-y-16 pb-7"
+        id="about"
+      >
+        <div
+          class="text-4xl lg:text-5xl font-semibold items-center justify-center"
+        >
+          <div class="flex justify-center items-center gap-2">
+            <span>About</span>
+            <span class="text-gray-500">Me!</span>
+          </div>
+
+          <img
+            src="../img/rifa2.jpg"
+            alt="rifaganteng"
+            class="w-[300px] rounded-full mt-[5vh] drop-shadow-lg mx-auto"
+          />
+          <i class="font-normal text-base"
+            >"tak perlu kata-kata yang penting aksi yang nyata"</i
+          >
+        </div>
+        <div class="pt-9">
+          <p class="font-semibold relative mb-[30px] lg:ml-5">
+            Halo teman-teman Selamat Datang!! di web saya, terimakasih sudah
+            mengunjungi website saya. Perkenalkan saya :
+          </p>
+          <dl class="lg:text-start lg:ml-5">
+            <dt class="font-semibold">Nama Lengkap</dt>
+            <dd>Muhammad Rifa Maulana Aziz</dd>
+            <dt class="font-semibold">TTL</dt>
+            <dd>Subang, 23 April 2005</dd>
+            <dt class="font-semibold">Hobi</dt>
+            <dd>Olahraga</dd>
+            <dt class="font-semibold">Sekolah</dt>
+            <dd>SMKN 1 CIANJUR</dd>
+          </dl>
+        </div>
+      </div>
+      <!-- Secondary Content End -->
+      <!-- Third Content/Contact Start -->
+      <div
+        class="container flex flex-col justify-center items-center mt-[300px] sm:pb-11"
+        id="contact"
+      >
+        <h1 class="text-4xl font-semibold">Contacts</h1>
+        <div class="mt-4">
+          <p class="text-center flex flex-wrap justify-center items-center">
+            Jika anda ingin bekerja sama atau ingin lebih mengenal saya hubungi
+            di salah satu kontak saya dibawah ini
+          </p>
+          <!-- Logo Medsos -->
+          <div
+            class="logo text-5xl flex flex-col lg:flex-row lg:gap-16 lg:justify-center items-center lg:mt-7"
+          >
+            <!-- Facebook -->
+            <div class="mt-8 justify-center items-center">
+              <a
+                href="https://facebook.com/rifa.bestrong"
+                class="justify-center items-center flex hover:text-blue-700 ease-in-out duration-300"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <p class="text-xl">Facebook.com/rifa.bestrong</p>
+            </div>
+            <!-- Instagram -->
+            <div class="mt-8 justify-center items-center">
+              <a
+                href="https://instagram.com/ivaraz_"
+                class="justify-center items-center flex hover:text-red-700 ease-in-out duration-300"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <p class="text-xl">Instagram.com/ivaraz_</p>
+            </div>
+            <!-- Tiktok -->
+            <div class="mt-8 justify-center items-center">
+              <a
+                href="https://tiktok.com/rifaaziz2005"
+                class="justify-center items-center flex hover:text-gray-600 ease-in-out duration-300"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <p class="text-xl">Tiktok.com/rifaaziz2005</p>
+            </div>
+            <!-- YouTube -->
+            <div class="mt-8 justify-center items-center">
+              <a
+                href="https://youtube.com/@mrma23"
+                class="justify-center items-center flex hover:text-red-600 ease-in-out duration-300"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <p class="text-xl">YouTube.com/rifaaziz23</p>
+            </div>
+            <!-- Discord -->
+            <div class="mt-8 justify-center items-center">
+              <a href="" class="justify-center items-center flex"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+              <p class="text-xl">Riffx#7293</p>
+            </div>
+            <!-- Email -->
+            <div class="mt-8 justify-center items-center">
+              <a href="" class="justify-center items-center flex"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+              <p class="text-xl">rifamaulana243@gmail.com</p>
+            </div>
+            <!-- sosmed end -->
+          </div>
+        </div>
+      </div>
+      <!-- Third Content/Contact End -->
+    </div>
+  </body>
+</html>
