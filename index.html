@@ -17,7 +17,9 @@
     <title>Personal Page</title>
   </head>
   <body>
-    <div class="container h-[100%] w-[100%] bg-gray-300">
+    <div
+      class="container h-[100%] w-[100%] bg-gray-300 sm:w-[100%] md:w-[100%]"
+    >
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
@@ -114,8 +116,13 @@
           <span class="font-bold">Personal</span>
           <span class="text-red-600 font-bold">Page</span>
         </p>
-        <p class="font-semibold flex-wrap text-center text-x mt-1">
-          I am a Student Computer Network of SMKN 1 Cianjur
+        <p class="font-semibold flex-wrap text-center text-x mt-1 mx-5">
+          I am a Student Computer Network of
+          <span class="text-center font-bold hover:text-red-500"
+            ><a href="https://instagram.com/smakzie" target="_blank"
+              >SMKN 1 Cianjur</a
+            ></span
+          >
         </p>
         <button
           class="pointer-events-none bg-gray-500 text-white p-2 rounded-md mt-3 font-semibold hover:bg-black active:bg-blue-600"
@@ -179,7 +186,7 @@
           </p>
           <!-- Logo Medsos -->
           <div
-            class="logo text-5xl grid lg:gap-5 lg:justify-center items-center lg:mt-7 mx-5"
+            class="logo text-5xl grid lg:gap-3 lg:justify-center items-center lg:mt-7 mx-5"
           >
             <!-- Facebook -->
             <div class="mt-8 justify-center items-center">
