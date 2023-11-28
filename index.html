@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <script
       src="https://kit.fontawesome.com/4beea4e20e.js"
       crossorigin="anonymous"
@@ -97,7 +100,8 @@
       <!-- NavBar End -->
       <!-- Main Content Start -->
       <div
-        class="main flex flex-col justify-center items-center pt-[4rem] pb-28"
+        class="main flex flex-col justify-center items-center pt-[4rem] pb-28 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
+        data-taos-offset="400"
         id="home"
       >
         <img
@@ -131,7 +135,7 @@
       <!-- Main Content End -->
       <!-- Secondary Content Start -->
       <div
-        class="2nd container md:flex lg:flex pt-[115px] text-center items-center justify-center lg:gap-y-16 pb-7"
+        class="2nd container md:flex lg:flex pt-[115px] text-center items-center justify-center lg:gap-y-16 pb-7 duration-[1000ms] ease-[cubic-bezier(.47,0,.745,.715)] taos:opacity-0"
         id="about"
       >
         <div
@@ -171,7 +175,8 @@
       <!-- Secondary Content End -->
       <!-- Third Content/Contact Start -->
       <div
-        class="container flex flex-col justify-center items-center mt-[300px] sm:pb-11"
+        class="container flex flex-col justify-center items-center mt-[300px] sm:pb-11 delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+        data-taos-offset="300"
         id="contact"
       >
         <h1 class="text-4xl font-semibold">Contacts</h1>
@@ -188,7 +193,8 @@
           >
             <!-- Facebook -->
             <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto"
+              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto delay-[200ms] duration-[300ms] taos:translate-x-[200px] taos:opacity-0"
+              data-taos-offset="400"
             >
               <a
                 href="https://facebook.com/rifa.bestrong"
@@ -201,7 +207,8 @@
             </div>
             <!-- Instagram -->
             <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto"
+              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto delay-[200ms] duration-[300ms] taos:translate-x-[200px] taos:opacity-0"
+              data-taos-offset="400"
             >
               <a
                 href="https://instagram.com/ivaraz_"
@@ -214,7 +221,8 @@
             </div>
             <!-- Tiktok -->
             <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto"
+              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto delay-[200ms] duration-[300ms] taos:translate-x-[200px] taos:opacity-0"
+              data-taos-offset="400"
             >
               <a
                 href="https://tiktok.com/@rifaaziz2005"
@@ -227,7 +235,8 @@
             </div>
             <!-- YouTube -->
             <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto"
+              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto delay-[200ms] duration-[300ms] taos:translate-x-[200px] taos:opacity-0"
+              data-taos-offset="400"
             >
               <a
                 href="https://youtube.com/@mrma23"
@@ -240,7 +249,8 @@
             </div>
             <!-- Discord -->
             <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto"
+              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto delay-[200ms] duration-[300ms] taos:translate-x-[200px] taos:opacity-0"
+              data-taos-offset="400"
             >
               <a
                 href="#"
@@ -253,7 +263,8 @@
             </div>
             <!-- Email -->
             <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto"
+              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0"
+              data-taos-offset="400"
             >
               <a
                 href="#"
@@ -266,7 +277,8 @@
             </div>
             <!-- Whatsapp -->
             <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto"
+              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto delay-[100ms] duration-[200ms] taos:translate-x-[200px] taos:opacity-0"
+              data-taos-offset="400"
             >
               <a
                 href="https://wa.me/+6283817388583"
@@ -288,5 +300,6 @@
       </footer>
       <!-- Footer End -->
     </div>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </body>
 </html>
