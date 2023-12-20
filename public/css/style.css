@@ -442,6 +442,11 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   visibility: hidden;
 }
 
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -690,12 +695,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   width: 100%;
 }
 
-.scale-\[0\.6\]{
-  --tw-scale-x: 0.6;
-  --tw-scale-y: 0.6;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -863,12 +862,12 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   text-align: center;
 }
 
-.font-Poppins{
-  font-family: Poppins, sans-serif;
-}
-
 .font-Lato{
   font-family: Lato, sans-serif;
+}
+
+.font-Poppins{
+  font-family: Poppins, sans-serif;
 }
 
 .text-2xl{
@@ -898,10 +897,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 
 .font-bold{
   font-weight: 700;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .font-normal{
@@ -982,10 +977,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   transition-delay: 0ms !important;
 }
 
-.delay-\[300ms\]{
-  transition-delay: 300ms;
-}
-
 .\!duration-\[0ms\]{
   transition-duration: 0ms !important;
 }
@@ -1020,10 +1011,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 
 .duration-\[4000ms\]{
   transition-duration: 4000ms;
-}
-
-.duration-\[600ms\]{
-  transition-duration: 600ms;
 }
 
 .ease-\[cubic-bezier\(\.47\2c 0\2c \.745\2c \.715\)\]{
@@ -1107,6 +1094,10 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:justify-center{
