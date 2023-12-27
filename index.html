@@ -19,17 +19,17 @@
     <title>Personal Page</title>
   </head>
   <body>
-    <div class="container h-full w-full bg-[#afb8c2]">
+    <div class="container h-full w-full bg-[#E6E6E6]">
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
-        class="navbar bg-[#afb8c2] fixed w-full top-0 z-50"
+        class="navbar bg-[#E6E6E6] fixed w-full top-0 z-50"
         id="nav"
       >
-        <div class="container mx-auto flex justify-between items-center p-4">
+        <div class="container mx-auto flex justify-between items-center p-5">
           <div class="p-2 rounded font-bold text-xl">
             <span class="font-Poppins">Muhammad</span>
-            <span class="text-red-600 font-Lora font-semibold">Rifa</span>
+            <span class="text-red-600 font-Quicksand">Rifa</span>
           </div>
           <button @click="open = !open" class="lg:hidden text-black">
             <svg
@@ -48,24 +48,24 @@
             </svg>
           </button>
           <div class="hidden lg:flex">
-            <ul class="lg:flex space-x-4 mr-5">
+            <ul class="lg:flex space-x-4 mr-10 gap-5">
               <li>
                 <a
-                  class="text-white font-semibold hover:text-black active:underline"
+                  class="text-black font-semibold text-lg hover:text-white active:underline"
                   href="#home"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  class="text-white font-semibold hover:text-black active:underline"
+                  class="text-black font-semibold text-lg hover:text-white active:underline"
                   href="#about"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  class="text-white font-semibold hover:text-black active:underline"
+                  class="text-black font-semibold text-lg hover:text-white active:underline"
                   href="#contact"
                   >Contact</a
                 >
@@ -75,7 +75,7 @@
         </div>
         <div x-show="open" class="lg:hidden">
           <ul
-            class="bg-[#afb8c2da] p-4 justify-center items-center flex flex-col gap-2"
+            class="bg-[#E6E6E6] p-4 justify-center items-center flex flex-col gap-2"
           >
             <li>
               <a class="text-black font-semibold hover:underline" href="#home"
@@ -100,7 +100,7 @@
       <!-- NavBar End -->
       <!-- Main Content Start -->
       <main
-        class="flex flex-col lg:flex-row justify-center items-center pt-[4rem] pb-28"
+        class="flex flex-col lg:flex-row-reverse justify-center items-center pt-[5rem] lg:pt-[8rem] pb-28 lg:justify-around lg:items-center"
         id="home"
       >
         <img
@@ -108,28 +108,25 @@
           alt="rifaganteng"
           class="w-[300px] rounded-full mt-[10vh] drop-shadow-lg"
         />
-        <div class="text-4xl mt-3 font-Lora font-semibold">
-          <span>Hello</span>
-          <span>World!</span>
-        </div>
-        <p class="mt-4 font-semibold text-xl">
-          Welcome to My
-          <span class="font-bold">Personal</span>
-          <span class="text-red-600 font-bold">Page</span>
-        </p>
-        <p class="font-semibold flex-wrap text-center text-x mt-1 mx-5">
-          I am a Student Computer Network of
-          <span class="text-center font-bold hover:text-red-500"
-            ><a href="https://instagram.com/smakzie" target="_blank"
-              >SMKN 1 Cianjur</a
-            ></span
+        <div class="mt-4 justify-center items-center flex flex-col">
+          <span class="text-5xl font-Outfit font-normal lg:text-7xl lg:pb-3"
+            >Hello World!</span
           >
-        </p>
-        <button
-          class="pointer-events-none bg-gray-500 text-white p-2 rounded-md mt-3 font-semibold hover:bg-black active:bg-blue-600"
-        >
-          <a href="../img/rifa.jpg" download>Download CV <i>(soon)</i></a>
-        </button>
+          <p class="mt-4 font-semibold text-xl">Welcome to My Personal Page</p>
+          <p class="font-semibold flex-wrap text-center text-x mt-1 mx-5">
+            I am a Student Computer Network of
+            <span class="text-center font-bold hover:text-red-500"
+              ><a href="https://instagram.com/smakzie" target="_blank"
+                >SMKN 1 Cianjur</a
+              ></span
+            >
+          </p>
+          <button
+            class="pointer-events-none lg:mt-6 bg-gray-500 text-white p-2 rounded-md mt-3 font-semibold hover:bg-black active:bg-blue-600"
+          >
+            <a href="../img/rifa.jpg" download>Download CV <i>(soon)</i></a>
+          </button>
+        </div>
       </main>
       <!-- Main Content End -->
       <!-- Secondary Content Start -->
@@ -138,7 +135,7 @@
         id="about"
       >
         <div
-          class="text-4xl lg:text-5xl font-semibold items-center justify-center"
+          class="text-5xl lg:text-5xl font-Lora font-normal items-center justify-center"
         >
           <div class="flex justify-center items-center gap-2">
             <span>About</span>
@@ -173,11 +170,13 @@
       </div>
       <!-- Secondary Content End -->
       <!-- Project-Container -->
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center mt-80">
+        <h1 class="font-semibold pb-16 font-Outfit text-center">
+          Other Projects
+        </h1>
         <div
-          class="gap-9 justify-center items-center grid grid-cols-1 lg:grid-cols-2 mt-80 duration-[1000ms] ease-[cubic-bezier(.47,0,.745,.715)] [animation-iteration-count:infinite] taos:opacity-0"
+          class="gap-9 justify-center items-center grid grid-cols-1 lg:grid-cols-3 duration-[1000ms] ease-[cubic-bezier(.47,0,.745,.715)] [animation-iteration-count:infinite] taos:opacity-0"
         >
-          <h1 class="font-semibold pb-1 text-center">Project Lainnya</h1>
           <!-- Project1 -->
           <a href="https://rostfoldx.github.io/XIITKJ3" target="_blank"
             ><div
@@ -213,7 +212,7 @@
         class="container flex flex-col justify-center items-center mt-[300px] sm:pb-11"
         id="contact"
       >
-        <h1 class="text-4xl font-semibold">Contacts</h1>
+        <h1 class="text-5xl font-Quicksand font-semibold">Contacts</h1>
         <div class="mt-4">
           <p
             class="font-semibold text-center flex flex-wrap justify-center items-center"
@@ -304,7 +303,7 @@
               </a>
             </div>
             <!-- Whatsapp -->
-            <!-- <div
+            <div
               class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[4000ms] [animation-iteration-count:infinite] taos:opacity-0"
             >
               <a
@@ -313,7 +312,7 @@
                 ><i class="fa-brands fa-whatsapp"></i>
                 <p class="text-xl text-center font-semibold pl-4">WhatsApp</p>
               </a>
-            </div> -->
+            </div>
             <!-- sosmed end -->
           </div>
         </div>

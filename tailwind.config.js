@@ -11,6 +11,8 @@ module.exports = {
         Lato: ["Lato", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
         Lora: ["Lora", "sans-serif"],
+        Quicksand: ["Quicksand", "sans-serif"],
+        Outfit: ["Outfit", "sans-serif"],
       },
     },
   },
