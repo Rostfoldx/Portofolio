@@ -19,18 +19,19 @@
     <title>Personal Page</title>
   </head>
   <body>
-    <div class="container h-full w-full bg-gray-300">
+    <div class="container h-full w-full bg-[#afb8c2]">
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
-        class="navbar bg-slate-600 shadow-md fixed w-full top-0 z-50"
+        class="navbar bg-[#afb8c2] fixed w-full top-0 z-50"
+        id="nav"
       >
         <div class="container mx-auto flex justify-between items-center p-4">
-          <div class="bg-white p-2 rounded font-bold text-xl">
-            <span>Personal</span>
-            <span class="text-red-600">Page</span>
+          <div class="p-2 rounded font-bold text-xl">
+            <span class="font-Poppins">Muhammad</span>
+            <span class="text-red-600 font-Lora font-semibold">Rifa</span>
           </div>
-          <button @click="open = !open" class="lg:hidden text-white">
+          <button @click="open = !open" class="lg:hidden text-black">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-6 h-6"
@@ -74,7 +75,7 @@
         </div>
         <div x-show="open" class="lg:hidden">
           <ul
-            class="bg-slate-400 p-4 justify-center items-center flex flex-col gap-2"
+            class="bg-[#afb8c2da] p-4 justify-center items-center flex flex-col gap-2"
           >
             <li>
               <a class="text-black font-semibold hover:underline" href="#home"
@@ -99,7 +100,7 @@
       <!-- NavBar End -->
       <!-- Main Content Start -->
       <main
-        class="flex flex-col justify-center items-center pt-[4rem] pb-28"
+        class="flex flex-col lg:flex-row justify-center items-center pt-[4rem] pb-28"
         id="home"
       >
         <img
@@ -107,9 +108,9 @@
           alt="rifaganteng"
           class="w-[300px] rounded-full mt-[10vh] drop-shadow-lg"
         />
-        <div class="text-4xl mt-3 font-Lato font-semibold">
-          <span class="text-red-600">Hello</span>
-          <span class="text-blue-700">World!</span>
+        <div class="text-4xl mt-3 font-Lora font-semibold">
+          <span>Hello</span>
+          <span>World!</span>
         </div>
         <p class="mt-4 font-semibold text-xl">
           Welcome to My
@@ -319,7 +320,7 @@
       </div>
       <!-- Third Content/Contact End -->
       <!-- Footer Start -->
-      <footer class="container py-3 bg-slate-500 font-Poppins mt-10">
+      <footer class="container py-3 bg-[#626c77] font-Poppins mt-10">
         <p class="text-white text-center justify-center">
           &copy; 2023 Muhammad Rifa. All right reserved
         </p>
@@ -327,5 +328,17 @@
       <!-- Footer End -->
     </div>
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+    <script>
+      let prevScrollPos = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        const currentScrollPos = window.scrollY;
+        if (prevScrollPos < currentScrollPos) {
+          document.querySelector("#nav").classList.add("show");
+        } else {
+          document.querySelector("#nav").classList.remove("show");
+        }
+      });
+    </script>
   </body>
 </html>

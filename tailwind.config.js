@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         Lato: ["Lato", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
+        Lora: ["Lora", "sans-serif"],
       },
     },
   },
