@@ -1,0 +1,13 @@
+.show {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.59);
+  background-color: #737f8c;
+  color: white;
+}
+.show2 {
+  color: white;
+}
+.show3 {
+  color: black;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./custom/nav.css" />
     <script>
       document.documentElement.classList.add("js");
     </script>
@@ -11,18 +12,6 @@
       src="https://kit.fontawesome.com/4beea4e20e.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      .show {
-        box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.59);
-        -webkit-box-shadow: 2px 3px 6px -1px rgba(0, 0, 0, 0.59);
-        -moz-box-shadow: 2px 3px 6px -1px rgba(0, 0, 0, 0.59);
-        background-color: #737f8c;
-        color: white;
-      }
-      .show2 {
-        color: white;
-      }
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script
       defer
@@ -67,21 +56,21 @@
             <ul class="lg:flex space-x-4 mr-10 gap-5">
               <li>
                 <a
-                  class="text-black font-semibold text-lg hover:text-white active:underline"
+                  class="lgNav text-black font-semibold text-lg hover:text-white active:underline"
                   href="#home"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  class="text-black font-semibold text-lg hover:text-white active:underline"
+                  class="lgNav text-black font-semibold text-lg hover:text-white active:underline"
                   href="#about"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  class="text-black font-semibold text-lg hover:text-white active:underline"
+                  class="lgNav text-black font-semibold text-lg hover:text-white active:underline"
                   href="#contact"
                   >Contact</a
                 >
@@ -360,19 +349,6 @@
       <!-- Footer End -->
     </div>
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
-    <script>
-      let prevScrollPos = window.scrollY;
-
-      window.addEventListener("scroll", () => {
-        const currentScrollPos = window.scrollY;
-        if (prevScrollPos < currentScrollPos) {
-          document.querySelector("#nav").classList.add("show");
-          document.querySelector("#btnNav").classList.add("show2");
-        } else {
-          document.querySelector("#nav").classList.remove("show");
-          document.querySelector("#btnNav").classList.remove("show2");
-        }
-      });
-    </script>
+    <script src="./custom/nav.js"></script>
   </body>
 </html>
