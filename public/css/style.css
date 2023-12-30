@@ -661,6 +661,34 @@ h1 {
   margin-top: 5vh;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mt-72{
+  margin-top: 18rem;
+}
+
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mt-40{
+  margin-top: 10rem;
+}
+
+.mt-52{
+  margin-top: 13rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -699,6 +727,22 @@ h1 {
 
 .w-full{
   width: 100%;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-24{
+  width: 6rem;
+}
+
+.w-48{
+  width: 12rem;
+}
+
+.w-\[20rem\]{
+  width: 20rem;
 }
 
 .grid-cols-1{
@@ -772,9 +816,9 @@ h1 {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-\[\#626c77\]{
+.bg-\[\#737f8c\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(98 108 119 / var(--tw-bg-opacity));
+  background-color: rgb(115 127 140 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#E6E6E6\]{
@@ -790,11 +834,6 @@ h1 {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#737f8c\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(115 127 140 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -883,6 +922,14 @@ h1 {
   font-family: Quicksand, sans-serif;
 }
 
+.font-Lato{
+  font-family: Lato, sans-serif;
+}
+
+.font-mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -891,6 +938,10 @@ h1 {
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-\[10rem\]{
+  font-size: 10rem;
 }
 
 .text-base{
@@ -906,6 +957,21 @@ h1 {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-9xl{
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -978,6 +1044,12 @@ h1 {
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1101,10 +1173,6 @@ h1 {
     margin-top: 1.75rem;
   }
 
-  .lg\:ml-11{
-    margin-left: 2.75rem;
-  }
-
   .lg\:flex{
     display: flex;
   }
@@ -1113,44 +1181,12 @@ h1 {
     display: none;
   }
 
-  .lg\:w-full{
-    width: 100%;
-  }
-
-  .lg\:w-5{
-    width: 1.25rem;
-  }
-
-  .lg\:w-24{
-    width: 6rem;
-  }
-
-  .lg\:w-52{
-    width: 13rem;
-  }
-
-  .lg\:w-60{
-    width: 15rem;
-  }
-
-  .lg\:w-72{
-    width: 18rem;
-  }
-
-  .lg\:w-80{
-    width: 20rem;
-  }
-
-  .lg\:w-96{
-    width: 24rem;
-  }
-
-  .lg\:w-\[30rem\]{
-    width: 30rem;
-  }
-
   .lg\:w-\[35rem\]{
     width: 35rem;
+  }
+
+  .lg\:w-full{
+    width: 100%;
   }
 
   .lg\:grid-cols-3{
@@ -1167,10 +1203,6 @@ h1 {
 
   .lg\:justify-center{
     justify-content: center;
-  }
-
-  .lg\:justify-between{
-    justify-content: space-between;
   }
 
   .lg\:justify-around{
