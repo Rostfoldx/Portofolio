@@ -13,6 +13,7 @@ module.exports = {
         Lora: ["Lora", "sans-serif"],
         Quicksand: ["Quicksand", "sans-serif"],
         Outfit: ["Outfit", "sans-serif"],
+        IBM: ["IBM Plex Mono", "monospace"],
       },
     },
   },
