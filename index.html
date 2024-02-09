@@ -92,7 +92,7 @@
     <title>Personal Page</title>
   </head>
   <body>
-    <div class="container h-full w-full bg-[#E6E6E6]">
+    <div class="h-full w-full bg-[#E6E6E6]">
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
@@ -180,11 +180,13 @@
         class="flex flex-col lg:flex-row-reverse justify-center items-center pt-[5rem] lg:pt-[8rem] pb-28 lg:justify-around lg:items-center"
         id="home"
       >
-        <img
-          src="../img/rifa.jpg"
-          alt="rifaganteng"
-          class="w-[300px] rounded-full mt-[10vh] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-        />
+        <div class="img">
+          <img
+            src="../img/rifabg.png"
+            alt="rifaganteng"
+            class="w-[350px] lg:w-[350px] rounded-full mt-[7vh]"
+          />
+        </div>
         <div class="mt-4 justify-center items-center flex flex-col">
           <span class="text-5xl font-Outfit font-normal lg:text-7xl lg:pb-3"
             >{Hello World};</span
@@ -199,7 +201,7 @@
             >
           </p>
           <button
-            class="lg:mt-6 bg-blue-900 text-white p-2 rounded-md mt-3 font-semibold hover:bg-black active:bg-blue-600"
+            class="lg:mt-6 bg-blue-900 text-white px-5 py-3 rounded-md mt-3 font-semibold hover:bg-black active:bg-blue-600"
           >
             <a href="./img/cv.mrifa.jpg" download>Download CV</a>
           </button>
@@ -208,7 +210,7 @@
       <!-- Main Content End -->
       <!-- Secondary Content Start -->
       <div
-        class="2nd container md:flex lg:flex pt-[115px] lg:justify-evenly text-center items-center justify-center lg:gap-y-16 pb-7 duration-[1000ms] ease-[cubic-bezier(.47,0,.745,.715)] [animation-iteration-count:infinite] taos:opacity-0"
+        class="2nd md:flex lg:flex pt-[115px] lg:justify-evenly text-center items-center justify-center lg:gap-y-20 pb-7 duration-[1000ms] ease-[cubic-bezier(.47,0,.745,.715)] [animation-iteration-count:infinite] taos:opacity-0"
         id="about"
       >
         <div
@@ -352,7 +354,7 @@
       <!-- Project End -->
       <!-- Third Content/Contact Start -->
       <div
-        class="container flex flex-col justify-center items-center mt-[300px] sm:pb-11"
+        class="flex flex-col justify-center items-center mt-[300px] sm:pb-11"
         id="contact"
       >
         <h1 class="text-5xl font-Quicksand font-semibold">Contacts</h1>
@@ -473,7 +475,7 @@
       </div>
       <!-- Third Content/Contact End -->
       <!-- Footer Start -->
-      <footer class="container py-3 bg-[#737f8c] font-Poppins mt-10">
+      <footer class="py-3 bg-[#737f8c] font-Poppins mt-10">
         <p class="text-white text-center justify-center">
           &copy; 2023 Muhammad Rifa. All right reserved
         </p>
