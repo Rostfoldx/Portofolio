@@ -474,6 +474,57 @@
         </div>
       </div>
       <!-- Third Content/Contact End -->
+      <!-- Suggestion start -->
+      <form
+        action="#"
+        class="mt-28 lg:flex flex flex-col justify-center items-center font-semibold"
+      >
+        <h1 class="font-semibold font-Quicksand text-4xl lg:text-5xl">
+          Suggestion
+        </h1>
+        <div class="mt-10 flex flex-col gap-1 justify-center items-center">
+          <label class="text-3xl" for="nama">Nama</label>
+          <input
+            type="text"
+            name="nama"
+            id="nama"
+            class="border-2 border-black rounded"
+          />
+        </div>
+        <!-- Display on Mobile -->
+        <div
+          class="mt-5 flex flex-col gap-1 justify-center items-center lg:hidden"
+        >
+          <label class="text-3xl" for="saran">Saran & Kritik</label>
+          <textarea
+            class="check rounded border-2 border-black"
+            name="saran"
+            id="saran"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <!-- display on PC -->
+        <div
+          class="hidden lg:flex lg:flex-col lg:gap-1 lg:mt-10 lg:justify-center lg:items-center"
+        >
+          <label class="text-3xl" for="saran">Saran & Kritik</label>
+          <textarea
+            class="check rounded border-2 border-black"
+            name="saran"
+            id="saran2"
+            cols="50"
+            rows="10"
+          ></textarea>
+        </div>
+        <button
+          id="btns"
+          class="mt-5 py-3 text-white px-6 bg-[#737f8c] hover:bg-slate-600 active:bg-slate-700 rounded-lg"
+        >
+          Submit
+        </button>
+      </form>
+      <!-- Suggestion End -->
       <!-- Footer Start -->
       <footer class="py-3 bg-[#737f8c] font-Poppins mt-10">
         <p class="text-white text-center justify-center">
@@ -484,5 +535,6 @@
     </div>
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
     <script src="./custom/nav.js"></script>
+    <script src="./custom/btn.js"></script>
   </body>
 </html>
