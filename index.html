@@ -548,6 +548,11 @@
           .then((response) => console.log("Success!", response))
           .catch((error) => console.error("Error!", error.message));
       });
+      const btn = document.getElementById("btns");
+
+      btn.addEventListener("click", () => {
+        alert("Terimakasih telah memberikan saran & kritik.");
+      });
     </script>
   </body>
 </html>
