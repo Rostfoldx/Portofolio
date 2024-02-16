@@ -12,6 +12,8 @@ btn.addEventListener("click", (event) => {
   }
   if (check.value == "" && check2.value == "") {
     alert("harap isi sarannya terlebih dahulu");
+  } else {
+    return;
   }
 });
 
