@@ -476,6 +476,7 @@
       <!-- Third Content/Contact End -->
       <!-- Suggestion start -->
       <form
+        name="kotak-saran"
         action="#"
         class="mt-28 lg:flex flex flex-col justify-center items-center font-semibold"
       >
@@ -511,7 +512,7 @@
           <label class="text-3xl" for="saran">Saran & Kritik</label>
           <textarea
             class="check rounded border-2 border-black"
-            name="saran"
+            name="saran2"
             id="saran2"
             cols="50"
             rows="10"
@@ -535,6 +536,18 @@
     </div>
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
     <script src="./custom/nav.js"></script>
-    <script src="./custom/btn.js"></script>
+    <!-- <script src="./custom/btn.js"></script> -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwu9gMNfh7I71Tmlchadg3BeNJxqiGQy8LEBYxHT6_7FKU4S_CDam7UkQDzm8_xQ5-X/exec";
+      const form = document.forms["kotak-saran"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
