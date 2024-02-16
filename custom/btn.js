@@ -12,14 +12,12 @@ btn.addEventListener("click", (event) => {
   }
   if (check.value == "" && check2.value == "") {
     alert("harap isi sarannya terlebih dahulu");
-  } else {
-    show();
   }
 });
 
-function show() {
-  alert("Terima kasih telah memberikan sarannya");
-  alert("sayangnya pesan belum bisa diterima");
-  alert("karena fitur ini sedang dalam tahap pengembangan");
-  alert("untuk sementara bisa lewat salah satu kontak saya :) ");
-}
+// function show() {
+//   alert("Terima kasih telah memberikan sarannya");
+//   alert("sayangnya pesan belum bisa diterima");
+//   alert("karena fitur ini sedang dalam tahap pengembangan");
+//   alert("untuk sementara bisa lewat salah satu kontak saya :) ");
+// }
