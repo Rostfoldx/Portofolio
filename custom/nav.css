@@ -3,11 +3,12 @@
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.59);
   -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.59);
   /* background-color: #737f8c; */
-  /* color: white; */
-  background-color: transparent;
+  color: white;
+  background-color: #737f8c;
+  /* background-color: transparent; */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-/* .show2 {
+.show2 {
   color: white;
-} */
+}
