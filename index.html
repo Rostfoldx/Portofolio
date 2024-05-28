@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth focus:scroll-auto" lang="en">
   <head>
     <link rel="apple-touch-icon" sizes="57x57" href="./favicon" />
     <link
@@ -100,9 +100,9 @@
         id="nav"
       >
         <div class="container mx-auto flex justify-between items-center p-5">
-          <div class="p-2 rounded font-bold text-xl">
+          <div class="p-2 font-semibold text-xl">
             <span class="font-Poppins">Muhammad</span>
-            <span class="font-Quicksand">Rifa</span>
+            <span class="font-Rubik">Rifa</span>
           </div>
           <button
             @click="open = !open"
@@ -127,17 +127,22 @@
           <div class="hidden lg:flex">
             <ul class="menu lg:flex space-x-4 mr-10 gap-5">
               <a
-                class="text-black font-semibold text-lg hover:text-white active:underline"
+                class="text-black font-semibold text-lg hover:underline active:underline"
                 href="#home"
                 >Home</a
               >
               <a
-                class="text-black font-semibold text-lg hover:text-white active:underline"
+                class="text-black font-semibold text-lg hover:underline active:underline"
                 href="#about"
                 >About</a
               >
               <a
-                class="text-black font-semibold text-lg hover:text-white active:underline"
+                class="text-black font-semibold text-lg hover:underline active:underline"
+                href="#project"
+                >Project</a
+              >
+              <a
+                class="text-black font-semibold text-lg hover:underline active:underline"
                 href="#contact"
                 >Contact</a
               >
@@ -153,6 +158,9 @@
             >
             <a class="text-black font-semibold hover:underline" href="#about"
               >About</a
+            >
+            <a class="text-black font-semibold hover:underline" href="#project"
+              >Project</a
             >
             <a class="text-black font-semibold hover:underline" href="#contact"
               >Contact</a
@@ -177,18 +185,10 @@
           <span class="text-5xl font-Outfit font-normal lg:text-7xl lg:pb-3"
             >{Hello World};</span
           >
-          <p class="mt-4 font-semibold text-xl">Welcome to My Personal Page</p>
-          <p class="font-semibold flex-wrap text-center text-x mt-1 mx-5">
-            I am a Student Computer Network of
-            <span class="text-center font-bold hover:text-red-500"
-              ><a href="https://instagram.com/smakzie" target="_blank"
-                >SMKN 1 Cianjur</a
-              ></span
-            >
-          </p>
+          <p class="mt-4 font-semibold text-xl">Welcome to My Portfolio site</p>
           <a
             class="inline-block rounded hover:ease-in-out hover:duration-300 border-2 mt-6 border-black px-12 py-3 text-sm font-medium bg-transparent hover:rotate-2 hover:scale-110"
-            href="./img/cv.mrifa.jpg"
+            href="./img/cv.mrifa.pdf"
           >
             DOWNLOAD CV
           </a>
@@ -201,9 +201,9 @@
         id="about"
       >
         <div
-          class="text-5xl lg:text-5xl font-Lora font-normal lg:ml-16 items-center justify-center"
+          class="text-5xl lg:text-5xl font-normal lg:ml-16 items-center justify-center"
         >
-          <div class="flex justify-center items-center gap-2">
+          <div class="font-Poppins flex justify-center items-center gap-2">
             <span>About</span>
             <span class="text-gray-500">Me!</span>
           </div>
@@ -219,54 +219,19 @@
         </div>
         <div class="pt-9">
           <div class="flow-root rounded-lg border-gray-100 py-3">
-            <dl class="-my-3 divide-gray-100 text-sm">
-              <div
-                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
-              >
-                <dt class="font-medium text-gray-900">Nama Lengkap</dt>
-                <dd class="text-gray-700 sm:col-span-2">
-                  Muhammad Rifa Maulana Aziz
-                </dd>
-              </div>
-
-              <div
-                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
-              >
-                <dt class="font-medium text-gray-900">TTL</dt>
-                <dd class="text-gray-700 sm:col-span-2">
-                  Subang, 23 April 2005
-                </dd>
-              </div>
-
-              <div
-                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
-              >
-                <dt class="font-medium text-gray-900">Hobi</dt>
-                <dd class="text-gray-700 sm:col-span-2">
-                  Olahraga, Tidur, Belajar
-                </dd>
-              </div>
-
-              <div
-                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
-              >
-                <dt class="font-medium text-gray-900">Sekolah</dt>
-                <dd class="text-gray-700 sm:col-span-2">SMKN 1 CIANJUR</dd>
-              </div>
-
-              <div
-                class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4"
-              >
-                <dt class="font-medium text-gray-900">Bio</dt>
-                <dd class="text-gray-700 sm:col-span-2">
-                  Halo teman-teman!! Saya adalah orang yang sangat senang
-                  belajar hal-hal baru, ini adalah salah satu hal baru yang saya
-                  pelajari, dan web ini masih dalam tahap pengembangan dan akan
-                  terus di update sesuai mood hehe, BTW Selamat Datang di web
-                  saya, terimakasih sudah mengunjungi website saya.
-                </dd>
-              </div>
-            </dl>
+            <div class="flex flex-col text-sm w-96 gap-1 p-3 sm:gap-4">
+              <p class="font-Rubik">
+                Halo semuanya!!, Nama saya Muhammad Rifa Maulana Aziz saya lahir
+                pada tanggal 23 April 2005 (19 tahun), saya tinggal di Cianjur,
+                Indonesia.
+              </p>
+              <p class="font-Rubik">
+                Saya adalah orang yang sangat senang belajar hal-hal baru, web
+                ini adalah salah satu hal baru yang saya pelajari, dan web ini
+                masih dalam tahap pengembangan dan akan terus di update sesuai
+                mood hehe, terimakasih sudah mengunjungi website saya.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -283,7 +248,7 @@
       </div> -->
       <!-- End -->
       <!-- Project-Container -->
-      <div class="flex flex-col items-center justify-center mt-80">
+      <div class="flex flex-col items-center justify-center mt-80" id="project">
         <h1 class="font-semibold pb-16 font-Outfit text-center">
           Dummy Projects
         </h1>

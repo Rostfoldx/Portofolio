@@ -10,6 +10,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -610,11 +612,6 @@ h1 {
   margin-bottom: -0.75rem;
 }
 
-.mx-5{
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -626,10 +623,6 @@ h1 {
 
 .mr-10{
   margin-right: 2.5rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
 }
 
 .mt-10{
@@ -732,8 +725,24 @@ h1 {
   width: 100%;
 }
 
+.w-14{
+  width: 3.5rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -781,6 +790,10 @@ h1 {
 .divide-gray-100 > :not([hidden]) ~ :not([hidden]){
   --tw-divide-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded{
@@ -936,6 +949,10 @@ h1 {
   font-family: Quicksand, sans-serif;
 }
 
+.font-Rubik{
+  font-family: Rubik, sans-serif;
+}
+
 .font-mono{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -1033,16 +1050,6 @@ h1 {
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-gray-700{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-gray-900{
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-green-500{
@@ -1169,18 +1176,20 @@ h1 {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.hover\:text-red-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:underline:hover{
   text-decoration-line: underline;
+}
+
+.hover\:duration-300:hover{
+  transition-duration: 300ms;
+}
+
+.hover\:ease-in-out:hover{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.focus\:scroll-auto:focus{
+  scroll-behavior: auto;
 }
 
 .active\:bg-slate-700:active{
@@ -1193,12 +1202,12 @@ h1 {
 }
 
 @media (min-width: 640px){
-  .sm\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:gap-4{

@@ -14,6 +14,7 @@ module.exports = {
         Quicksand: ["Quicksand", "sans-serif"],
         Outfit: ["Outfit", "sans-serif"],
         IBM: ["IBM Plex Mono", "monospace"],
+        Rubik: ["Rubik", "sans-serif"],
       },
     },
   },
