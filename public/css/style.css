@@ -823,6 +823,11 @@ h1 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#eaeaea\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 234 234 / var(--tw-bg-opacity));
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -875,8 +880,8 @@ h1 {
   padding-bottom: 1.75rem;
 }
 
-.pb-\[200px\]{
-  padding-bottom: 200px;
+.pb-\[40px\]{
+  padding-bottom: 40px;
 }
 
 .pl-3{
@@ -907,20 +912,12 @@ h1 {
   padding-top: 5rem;
 }
 
-.pb-\[20px\]{
-  padding-bottom: 20px;
-}
-
-.pb-\[50px\]{
-  padding-bottom: 50px;
-}
-
-.pb-\[40px\]{
-  padding-bottom: 40px;
-}
-
 .text-center{
   text-align: center;
+}
+
+.font-Lato{
+  font-family: Lato, sans-serif;
 }
 
 .font-Lora{
@@ -945,14 +942,6 @@ h1 {
 
 .font-mono{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.font-IBM{
-  font-family: IBM Plex Mono, monospace;
-}
-
-.font-Lato{
-  font-family: Lato, sans-serif;
 }
 
 .text-2xl{
