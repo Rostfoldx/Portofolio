@@ -4,16 +4,16 @@ window.addEventListener("scroll", () => {
 
   if (Scroll > 1) {
     document.querySelector("#nav").classList.add("show");
-    document.querySelector("#btnNav").classList.add("show2");
+    // document.querySelector("#btnNav").classList.add("show2");
 
-    lgNav.forEach(function (item) {
-      item.style.color = "white";
-    });
+    // lgNav.forEach(function (item) {
+    //   item.style.color = "white";
+    // });
   } else {
-    lgNav.forEach(function (item) {
-      item.style.color = "black";
-    });
+    // lgNav.forEach(function (item) {
+    //   item.style.color = "black";
+    // });
     document.querySelector("#nav").classList.remove("show");
-    document.querySelector("#btnNav").classList.remove("show2");
+    // document.querySelector("#btnNav").classList.remove("show2");
   }
 });
