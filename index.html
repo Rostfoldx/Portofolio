@@ -89,24 +89,28 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
     ></script>
-    <title>Personal Page</title>
+    <title>Profile | Muhammad Rifa</title>
   </head>
   <body>
-    <div class="h-full w-full bg-[#E6E6E6]">
+    <div class="dark:bg-slate-600 h-full w-full bg-[#E6E6E6]">
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
-        class="navbar bg-[#E6E6E6] fixed w-full top-0 z-50"
+        class="navbar dark:bg-slate-600 bg-[#E6E6E6] fixed w-full top-0 z-50"
         id="nav"
       >
         <div class="container mx-auto flex justify-between items-center p-5">
           <div class="p-2 font-semibold text-xl">
-            <span class="font-Poppins">Muhammad</span>
-            <span class="font-Rubik">Rifa</span>
+            <label
+              for="mode"
+              class="font-Inter-700 cursor-pointer dark:text-white"
+              >M.R.M.A.</label
+            >
+            <input class="hidden" type="checkbox" id="mode" />
           </div>
           <button
             @click="open = !open"
-            class="lg:hidden text-black"
+            class="lg:hidden text-black dark:text-white"
             id="btnNav"
           >
             <svg
@@ -125,24 +129,24 @@
             </svg>
           </button>
           <div class="hidden lg:flex">
-            <ul class="menu lg:flex space-x-4 mr-10 gap-5">
+            <ul class="menu lg:flex space-x-4 mr-10 gap-5 dark:text-white">
               <a
-                class="text-black font-semibold text-lg hover:underline active:underline"
+                class="text-black dark:text-white font-semibold text-lg hover:underline active:underline"
                 href="#home"
                 >Home</a
               >
               <a
-                class="text-black font-semibold text-lg hover:underline active:underline"
+                class="text-black dark:text-white font-semibold text-lg hover:underline active:underline"
                 href="#about"
                 >About</a
               >
               <a
-                class="text-black font-semibold text-lg hover:underline active:underline"
+                class="text-black dark:text-white font-semibold text-lg hover:underline active:underline"
                 href="#project"
                 >Project</a
               >
               <a
-                class="text-black font-semibold text-lg hover:underline active:underline"
+                class="text-black dark:text-white font-semibold text-lg hover:underline active:underline"
                 href="#contact"
                 >Contact</a
               >
@@ -151,18 +155,26 @@
         </div>
         <div x-show="open" class="lg:hidden">
           <ul
-            class="menu bg-transparent p-4 justify-center items-center flex flex-col gap-2"
+            class="menu dark:text-white bg-transparent p-4 justify-center items-center flex flex-col gap-2"
           >
-            <a class="text-black font-semibold hover:underline" href="#home"
+            <a
+              class="text-black dark:text-white font-semibold hover:underline"
+              href="#home"
               >Home</a
             >
-            <a class="text-black font-semibold hover:underline" href="#about"
+            <a
+              class="text-black dark:text-white font-semibold hover:underline"
+              href="#about"
               >About</a
             >
-            <a class="text-black font-semibold hover:underline" href="#project"
+            <a
+              class="text-black dark:text-white font-semibold hover:underline"
+              href="#project"
               >Project</a
             >
-            <a class="text-black font-semibold hover:underline" href="#contact"
+            <a
+              class="text-black dark:text-white font-semibold hover:underline"
+              href="#contact"
               >Contact</a
             >
           </ul>
@@ -178,16 +190,19 @@
           <img
             src="../img/rifa.jpg"
             alt="rifaganteng"
-            class="w-[350px] lg:w-[350px] rounded-full mt-[7vh]"
+            class="w-[300px] lg:w-[350px] rounded-full mt-[7vh]"
           />
         </div>
         <div class="mt-4 justify-center items-center flex flex-col">
-          <span class="text-5xl font-Outfit font-normal lg:text-7xl lg:pb-3"
+          <span
+            class="text-5xl font-Outfit font-normal lg:text-7xl lg:pb-3 dark:text-white"
             >{Hello World};</span
           >
-          <p class="mt-4 font-semibold text-xl">Welcome to My Portfolio site</p>
+          <p class="mt-4 font-semibold text-xl dark:text-white">
+            Front End Enthusiast
+          </p>
           <a
-            class="inline-block rounded hover:ease-in-out hover:duration-300 border-2 mt-6 border-black px-12 py-3 text-sm font-medium bg-transparent hover:rotate-2 hover:scale-110"
+            class="dark:text-white dark:border-white inline-block rounded hover:ease-in-out hover:duration-300 border-2 mt-6 border-black px-12 py-3 text-sm font-medium bg-transparent hover:rotate-2 hover:scale-110"
             href="./img/mrifa.pdf"
           >
             DOWNLOAD CV
@@ -197,7 +212,7 @@
       <!-- Main Content End -->
       <div
         id="about"
-        class="pt-[115px] pb-[40px] text-5xl lg:text-5xl font-Quicksand font-semibold flex justify-center items-center gap-2"
+        class="dark:text-white pt-[115px] pb-[40px] text-5xl lg:text-5xl font-Quicksand font-semibold flex justify-center items-center gap-2"
       >
         <span>About</span>
         <span>Me!</span>
@@ -214,13 +229,15 @@
             alt="rifaganteng"
             class="w-[300px] relative rounded-lg mt-[5vh] drop-shadow-lg mx-auto"
           />
-          <i class="font-normal text-base font-Lora"
+          <i class="font-normal text-base font-Lora dark:text-white"
             >"Grow Up and Make the BEST Part of Life"</i
           >
         </div>
         <div class="pt-9">
           <div class="flex rounded-lg border-gray-100 py-3">
-            <div class="flex flex-col text-sm w-96 gap-1 p-3 sm:gap-4">
+            <div
+              class="flex flex-col text-sm w-96 gap-1 p-3 sm:gap-4 dark:text-white"
+            >
               <p class="font-Rubik">
                 Halo semuanya!!, Nama saya Muhammad Rifa Maulana Aziz saya lahir
                 pada tanggal 23 April 2005 (19 tahun), saya tinggal di Cianjur,
@@ -250,7 +267,7 @@
       <!-- End -->
       <!-- Project-Container -->
       <div class="flex flex-col items-center justify-center mt-80" id="project">
-        <h1 class="font-semibold pb-16 font-Outfit text-center">
+        <h1 class="dark:text-white font-semibold pb-16 font-Outfit text-center">
           Dummy Projects
         </h1>
         <div
@@ -291,10 +308,12 @@
         class="flex flex-col justify-center items-center mt-[300px] sm:pb-11"
         id="contact"
       >
-        <h1 class="text-5xl font-Quicksand font-semibold">Contacts</h1>
+        <h1 class="dark:text-white text-5xl font-Quicksand font-semibold">
+          Contacts
+        </h1>
         <div class="mt-4">
           <p
-            class="font-semibold text-center flex flex-wrap justify-center items-center"
+            class="dark:text-white font-semibold text-center flex flex-wrap justify-center items-center"
           >
             Jika anda ingin bekerja sama atau ingin lebih mengenal saya hubungi
             di salah satu kontak saya dibawah ini
@@ -415,9 +434,11 @@
         action="#"
         class="mt-28 lg:flex flex flex-col justify-center items-center"
       >
-        <h1 class="font-Lato text-4xl lg:text-5xl">Suggestion</h1>
+        <h1 class="dark:text-white font-Lato text-4xl lg:text-5xl">
+          Suggestion
+        </h1>
         <div class="mt-10 flex flex-col gap-1 justify-center items-center">
-          <label class="text-3xl" for="nama">Nama</label>
+          <label class="text-3xl dark:text-white" for="nama">Nama</label>
           <input
             type="text"
             name="nama"
@@ -429,7 +450,9 @@
         <div
           class="mt-5 flex flex-col gap-1 justify-center items-center lg:hidden"
         >
-          <label class="text-3xl" for="saran">Saran & Kritik</label>
+          <label class="text-3xl dark:text-white" for="saran"
+            >Saran & Kritik</label
+          >
           <textarea
             class="check rounded border-2 border-black"
             name="saran"
@@ -442,7 +465,9 @@
         <div
           class="hidden lg:flex lg:flex-col lg:gap-1 lg:mt-10 lg:justify-center lg:items-center"
         >
-          <label class="text-3xl" for="saran">Saran & Kritik</label>
+          <label class="text-3xl dark:text-white" for="saran"
+            >Saran & Kritik</label
+          >
           <textarea
             class="check rounded border-2 border-black"
             name="saran2"
@@ -453,14 +478,14 @@
         </div>
         <button
           id="btns"
-          class="mt-5 py-3 text-white px-6 bg-[#737f8c] hover:bg-slate-600 active:bg-slate-700 rounded-lg"
+          class="dark:bg-slate-800 dark:hover:bg-slate-600 border-black mt-5 py-3 text-white px-6 bg-[#737f8c] hover:bg-slate-600 active:bg-slate-700 rounded-lg"
         >
           Submit
         </button>
       </form>
       <!-- Suggestion End -->
       <!-- Footer Start -->
-      <footer class="py-3 bg-[#737f8c] font-Poppins mt-10">
+      <footer class="dark:bg-slate-800 py-3 bg-[#737f8c] font-Poppins mt-10">
         <p class="text-white text-center justify-center">
           &copy; 2023 Muhammad Rifa. All right reserved
         </p>
@@ -469,6 +494,7 @@
     </div>
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
     <script type="module" src="./custom/nav.js"></script>
+    <script type="module" src="./custom/dark.js"></script>
     <script type="module" src="./custom/form.js"></script>
   </body>
 </html>

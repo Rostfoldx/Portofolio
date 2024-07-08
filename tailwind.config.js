@@ -5,6 +5,7 @@ module.exports = {
     transform: (content) => content.replace(/taos:/g, ""),
     files: ["./index.html"],
   },
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -15,6 +16,7 @@ module.exports = {
         Outfit: ["Outfit", "sans-serif"],
         IBM: ["IBM Plex Mono", "monospace"],
         Rubik: ["Rubik", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
       },
     },
   },
