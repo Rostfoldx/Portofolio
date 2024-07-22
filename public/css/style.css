@@ -1180,34 +1180,19 @@ h1 {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-:is(.dark .dark\:bg-slate-800){
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-slate-700){
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-:is(.dark .dark\:bg-slate-900){
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:bg-slate-600){
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:bg-slate-800){
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:text-white){
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:hover\:bg-slate-700:hover){
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:hover\:bg-slate-600:hover){
@@ -1316,5 +1301,15 @@ h1 {
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
