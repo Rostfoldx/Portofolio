@@ -17,6 +17,7 @@ module.exports = {
         IBM: ["IBM Plex Mono", "monospace"],
         Rubik: ["Rubik", "sans-serif"],
         Inter: ["Inter", "sans-serif"],
+        Noto: ["Noto Serif Tibetan", "serif"],
       },
     },
   },
