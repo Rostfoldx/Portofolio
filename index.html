@@ -89,7 +89,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
     ></script>
-    <title>Personal Website | Muhammad Rifa</title>
+    <title>Portfolio | Muhammad Rifa</title>
   </head>
   <body>
     <div class="dark:bg-slate-800 h-full w-full bg-[#E6E6E6]">
@@ -131,25 +131,37 @@
           <div class="hidden lg:flex">
             <ul class="menu lg:flex space-x-4 mr-10 gap-5">
               <a
-                class="text-black dark:text-white font-semibold text-sm hover:underline underline-offset-8 active:underline"
+                class="group transition text-black dark:text-white font-semibold text-sm active:text-white"
                 href="#home"
-                >Home</a
-              >
+                >Home
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+                ></span
+              ></a>
               <a
-                class="text-black dark:text-white font-semibold text-sm hover:underline underline-offset-8 active:underline"
+                class="group transition text-black dark:text-white font-semibold text-sm active:text-white"
                 href="#about"
-                >About</a
-              >
+                >About
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+                ></span
+              ></a>
               <a
-                class="text-black dark:text-white font-semibold text-sm hover:underline underline-offset-8 active:underline"
+                class="group transition text-black dark:text-white font-semibold text-sm active:text-white"
                 href="#project"
-                >Project</a
-              >
+                >Project
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+                ></span
+              ></a>
               <a
-                class="text-black dark:text-white font-semibold text-sm hover:underline underline-offset-8 active:underline"
+                class="group transition text-black dark:text-white font-semibold text-sm active:text-white"
                 href="#contact"
-                >Contact</a
-              >
+                >Contact
+                <span
+                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+                ></span
+              ></a>
             </ul>
           </div>
         </div>
@@ -183,13 +195,13 @@
       <!-- NavBar End -->
       <!-- Main Content Start -->
       <main
-        class="flex flex-col lg:flex-row-reverse justify-center items-center pt-[5rem] lg:pt-[8rem] pb-28 lg:justify-around lg:mx-36 lg:items-center"
+        class="flex flex-col lg:flex-row-reverse justify-center items-center pt-[6rem] lg:pt-[8rem] pb-52 lg:justify-around lg:mx-36 lg:items-center"
         id="home"
       >
         <img
           src="../img/rifa.jpg"
           alt="rifaganteng"
-          class="w-[250px] lg:w-[250px] rounded-full relative mt-[7vh]"
+          class="w-[250px] lg:w-[300px] rounded-full relative mt-[7vh]"
         />
         <div class="flex flex-col text-center lg:text-left relative top-10">
           <h1
@@ -289,7 +301,7 @@
       <!-- Project-Container -->
       <div class="flex flex-col items-center justify-center mt-80" id="project">
         <p
-          class="dark:text-white font-semibold text-2xl pb-16 font-Outfit text-center"
+          class="dark:text-white font-semibold text-3xl pb-16 font-Outfit text-center"
         >
           Dummy Projects
         </p>
@@ -297,34 +309,119 @@
           class="gap-9 justify-center items-center grid grid-cols-1 lg:grid-cols-3 duration-[1000ms] ease-[cubic-bezier(.47,0,.745,.715)] [animation-iteration-count:infinite] taos:opacity-0"
         >
           <!-- Project1 -->
-          <a href="https://rostfoldx.github.io/XIITKJ3" target="_blank"
-            ><div
-              class="bg-white px-10 pt-6 pb-10 rounded-xl shadow-2xl hover:bg-slate-200 duration-300 hover:translate-y-3"
+          <a href="https://ivaraz.github.io/XIITKJ3" class="group relative block h-72">
+            <span
+              class="absolute inset-0 border-2 border-dashed border-black"
+            ></span>
+
+            <div
+              class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
             >
-              <img src="./img/cp.png" class="w-60 rounded-lg" alt="project" />
-              <p class="text-2xl font-bold text-center pt-8">Website Kelas</p>
+              <div
+                class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 "
+              >
+              <img src="./img/cp.png" class="w-52" alt="webkelas">
+                <h2 class="mt-4 text-lg font-Lato text-center">
+                  Website Kelas
+                </h2>
+              </div>
+
+              <div
+                class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 lg:pt-8"
+              >
+                <img src="./img/cp.png" class="w-44" alt="webkelas">
+                <h3 class="mt-4 text-xl font-medium sm:text-xl">
+                  This Website Use Tech :
+                </h3>
+                <div class="flex justify-start gap-2 items-center">
+                  <div>
+                    <img src="./custom/tailwind-logo.svg" class="w-10" alt="tailwindcss">
+                  </div>
+                  <div>
+                    <img src="./custom/Alpine.js.svg" class="w-10" alt="alpinejs">
+                  </div>
+                </div>
+               
+              </div>
             </div>
           </a>
-          <!-- Project2 -->
-          <a href="https://ivaraz.github.io/undangan" target="_blank"
-            ><div
-              class="bg-white px-10 pt-6 pb-10 rounded-xl shadow-2xl hover:bg-slate-200 duration-300 hover:translate-y-3"
+          <!-- Project 2 -->
+          <a href="https://ivaraz.github.io/undangan" class="group relative block h-72">
+            <span
+              class="absolute inset-0 border-2 border-dashed border-black"
+            ></span>
+
+            <div
+              class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
             >
-              <img src="./img/cp2.png" class="w-60 rounded-lg" alt="project" />
-              <p class="text-2xl font-bold text-center pt-8">Undangan</p>
+              <div
+                class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 "
+              >
+              <img src="./img/cp2.png" class="w-52" alt="webkelas">
+                <h2 class="mt-4 text-lg font-Lato text-center">
+                  Website Undangan
+                </h2>
+              </div>
+
+              <div
+                class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:pt-8"
+              >
+              <img src="./img/cp2.png" class="w-44" alt="undangan">
+                <h3 class="mt-4 text-xl font-medium sm:text-xl">
+                  This Website Use Tech :
+                </h3>
+                <div class="flex justify-start gap-2 items-center">
+                  <div>
+                    <img src="./custom/tailwind-logo.svg" class="w-10" alt="tailwindcss">
+                  </div>
+                  <div>
+                    <img src="./custom/Alpine.js.svg" class="w-10" alt="alpinejs">
+                  </div>
+                </div>
+               
+              </div>
             </div>
           </a>
-          <!-- Project3 -->
-          <a href="https://ivaraz.github.io/login-page" target="_blank"
-            ><div
-              class="bg-white px-10 pt-6 pb-10 rounded-xl shadow-2xl hover:bg-slate-200 duration-300 hover:translate-y-3"
+          <!-- Project 3 -->
+          <a href="https://ivaraz.github.io/login-page" class="group relative block h-72">
+            <span
+              class="absolute inset-0 border-2 border-dashed border-black"
+            ></span>
+
+            <div
+              class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
             >
-              <img src="./img/cp3.png" class="w-60 rounded-lg" alt="project" />
-              <p class="text-2xl font-bold text-center pt-8">Login Page</p>
+              <div
+                class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 "
+              >
+              <img src="./img/cp3.png" class="w-52" alt="webkelas">
+                <h2 class="mt-4 text-lg font-Lato text-center">
+                  Login Page
+                </h2>
+              </div>
+
+              <div
+                class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:pt-8"
+              >
+              <img src="./img/cp3.png" class="w-44" alt="login-page">
+                <h3 class="mt-4 text-xl font-medium sm:text-xl">
+                  This Website Use Tech :
+                </h3>
+                <div class="flex justify-start gap-2 items-center">
+                  <div>
+                    <img src="./custom/html-logo.svg" class="w-10" alt="html">
+                  </div>
+                  <div>
+                    <img src="./custom/css-logo.svg" class="w-10" alt="css">
+                  </div>
+                </div>
+               
+              </div>
             </div>
           </a>
+          <!-- end session -->
         </div>
-      </div>
+
       <!-- Project End -->
       <!-- Third Content/Contact Start Display on Mobile -->
       <div
@@ -508,7 +605,7 @@
       </form>
       <!-- Suggestion End -->
       <!-- Footer Start -->
-      <footer class="dark:bg-slate-900 py-3 bg-[#737f8c] font-Poppins mt-10">
+      <footer class="dark:bg-slate-900 py-3 w-full bg-[#737f8c] font-Poppins mt-10">
         <p class="text-white text-center justify-center">
           &copy; 2023 Muhammad Rifa. All right reserved
         </p>
