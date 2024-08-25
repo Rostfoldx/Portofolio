@@ -1,80 +1,9 @@
 <!DOCTYPE html>
 <html class="scroll-smooth focus:scroll-auto" lang="en">
   <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="./favicon" />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" type="image/icon type">
     <link rel="stylesheet" href="./public/css/style.css" />
     <link rel="stylesheet" href="./custom/nav.css" />
     <script>
@@ -92,11 +21,11 @@
     <title>Portfolio | Muhammad Rifa</title>
   </head>
   <body>
-    <div class="dark:bg-slate-800 h-full w-full bg-[#E6E6E6]">
+    <div class="dark:bg-black h-full w-full bg-white">
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
-        class="navbar dark:bg-slate-800 bg-[#E6E6E6] fixed w-full top-0 z-50"
+        class="navbar dark:bg-black dark:border-b dark:border-white bg-white fixed w-full top-0 z-50"
         id="nav"
       >
         <div class="container mx-auto flex justify-between items-center p-5">
@@ -131,7 +60,7 @@
           <div class="hidden lg:flex">
             <ul class="menu lg:flex space-x-4 mr-10 gap-5">
               <a
-                class="group transition text-black dark:text-white font-semibold text-sm active:text-white"
+                class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
                 href="#home"
                 >Home
                 <span
@@ -139,7 +68,7 @@
                 ></span
               ></a>
               <a
-                class="group transition text-black dark:text-white font-semibold text-sm active:text-white"
+                class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
                 href="#about"
                 >About
                 <span
@@ -147,17 +76,9 @@
                 ></span
               ></a>
               <a
-                class="group transition text-black dark:text-white font-semibold text-sm active:text-white"
+                class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
                 href="#project"
                 >Project
-                <span
-                  class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
-                ></span
-              ></a>
-              <a
-                class="group transition text-black dark:text-white font-semibold text-sm active:text-white"
-                href="#contact"
-                >Contact
                 <span
                   class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
                 ></span
@@ -184,11 +105,6 @@
               href="#project"
               >Project</a
             >
-            <a
-              class="text-black dark:text-white font-semibold hover:underline"
-              href="#contact"
-              >Contact</a
-            >
           </ul>
         </div>
       </div>
@@ -201,7 +117,7 @@
         <img
           src="../img/rifa.jpg"
           alt="rifaganteng"
-          class="w-[250px] lg:w-[300px] rounded-full relative mt-[7vh]"
+          class="w-[250px] lg:w-[300px] rounded-full shadow-lg relative mt-[7vh]"
         />
         <div class="flex flex-col text-center lg:text-left relative top-10">
           <h1
@@ -213,10 +129,19 @@
               class="font-Noto absolute block text-left font-normal w-[19rem] lg:w-[37rem] lg:pb-3 dark:text-white"
             ></span>
           </h1>
-          <p class="w-72 mt-9 dark:text-white">
+          <div class="flex gap-4 items-center justify-center lg:justify-start mt-10 text-xl">
+           <a class="hover:text-blue-600 dark:text-white dark:hover:text-blue-600" href="https://www.facebook.com/rifa.bestrong"><i class="fa-brands fa-facebook"></i></a> 
+           <a class="hover:text-red-600 dark:text-white dark:hover:text-red-600" href="https://www.instagram.com/ivaraz_"><i class="fa-brands fa-instagram"></i></a>
+           <a class="hover:text-red-500 dark:text-white dark:hover:text-red-500" href="mailto:rifamaulana243@gmail.com"><i class="fa-brands fa-google"></i></a>
+           <a class="hover:text-blue-500 dark:text-white dark:hover:text-blue-500" href="https://www.linkedin.com/in/rifaaziz23/"><i class="fa-brands fa-linkedin"></i></a>
+           <a class="hover:text-green-600 dark:text-white dark:hover:text-green-600" href="https://wa.me/+6283817388583"><i class="fa-brands fa-whatsapp"></i></a>
+           <a class="hover:text-blue-800 dark:text-white dark:hover:text-blue-800" href="https://discordapp.com/users/812010556591833148"><i class="fa-brands fa-discord"></i></a>
+          </div>
+          <p class="w-72 mt-4 dark:text-white">
             I'm a Colleger, web developer, and an Editor based in Cianjur West
             Java, Indonesia
           </p>
+          
           <button
             class="flex w-[165px] mx-auto md:mx-0 mt-5 py-2 px-4 border-2 border-black transition-all duration-500 rounded-md gap-4 items-center hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
           >
@@ -269,7 +194,7 @@
         <div class="pt-9">
           <div class="flex rounded-lg border-gray-100 py-3">
             <div
-              class="flex flex-col text-xs lg:text-sm w-96 gap-1 p-3 sm:gap-4 dark:text-white"
+              class="flex flex-col text-xs lg:text-lg w-96 gap-1 p-3 sm:gap-4 dark:text-white"
             >
               <p class="font-Rubik">
                 Halo semuanya!!, Nama saya Muhammad Rifa Maulana Aziz saya lahir
@@ -288,20 +213,10 @@
       </div>
 
       <!-- Secondary Content End -->
-      <!-- Quotes Of The Day -->
-      <!-- <div class="flex flex-col justify-center items-center mt-52 text-center">
-        <h1 class="font-bold text-9xl mb-5 font-Quicksand">?</h1>
-        <h1>Quotes of The Day</h1>
-        <p class="pt-6 text-xl font-mono w-[20rem]">
-          "Belajar aja dulu, ngertinya belakangan."
-        </p>
-        <p class="mt-5 font-thin">- Muhammad Rifa -</p>
-      </div> -->
-      <!-- End -->
       <!-- Project-Container -->
-      <div class="flex flex-col items-center justify-center mt-80" id="project">
+      <div class="flex flex-col items-center justify-center mt-60" id="project">
         <p
-          class="dark:text-white font-semibold text-3xl pb-16 font-Outfit text-center"
+          class="dark:text-white font-semibold text-3xl lg:text-4xl pb-16 font-Outfit text-center"
         >
           Dummy Projects
         </p>
@@ -457,136 +372,11 @@
         </div>
 
       <!-- Project End -->
-      <!-- Third Content/Contact Start Display on Mobile -->
-      <div
-        class="flex flex-col justify-center items-center mt-[300px] sm:pb-11"
-        id="contact"
-      >
-        <h1 class="dark:text-white text-5xl font-Quicksand font-semibold">
-          Contacts
-        </h1>
-        <div class="mt-4">
-          <p
-            class="dark:text-white font-semibold text-sm text-center flex flex-wrap justify-center items-center"
-          >
-            Jika anda ingin bekerja sama atau ingin lebih mengenal saya hubungi
-            di salah satu kontak saya dibawah ini
-          </p>
-          <!-- Logo Medsos -->
-          <div
-            class="logo text-5xl lg:gap-3 lg:justify-center items-center lg:mt-7"
-          >
-            <!-- Facebook -->
-            <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[1000ms] [animation-iteration-count:infinite] taos:opacity-0"
-            >
-              <a
-                href="https://facebook.com/rifa.bestrong"
-                class="justify-center items-center flex bg-white text-blue-700 hover:bg-slate-200 ease-in-out duration-300 border-[3px] border-black p-4 shadow-md"
-                ><i class="fa-brands fa-facebook"></i>
-                <p class="text-xl text-center pl-4 font-semibold">
-                  Facebook | Muhammad Rifa
-                </p>
-              </a>
-            </div>
-            <!-- Instagram -->
-            <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[1500ms] [animation-iteration-count:infinite] taos:opacity-0"
-            >
-              <a
-                href="https://instagram.com/ivaraz_"
-                class="justify-center items-center flex bg-white hover:bg-slate-200 text-red-700 ease-in-out duration-300 border-[3px] border-black p-5 shadow-md"
-                ><i class="fa-brands fa-instagram"></i>
-                <p class="text-xl text-center pl-4 font-semibold">
-                  Instagram | @ivaraz_
-                </p>
-              </a>
-            </div>
-            <!-- Tiktok -->
-            <!-- <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[2000ms] [animation-iteration-count:infinite] taos:opacity-0"
-            >
-              <a
-                href="https://tiktok.com/@rifaaziz2005"
-                class="justify-center items-center flex bg-white hover:bg-slate-200 text-gray-600 ease-in-out duration-300 border-[3px] border-black p-5 shadow-md"
-                ><i class="fa-brands fa-tiktok"></i>
-                <p class="text-xl text-center pl-4 font-semibold">
-                  TikTok | RF
-                </p>
-              </a> -->
-            <!-- </div> -->
-            <!-- YouTube -->
-            <!-- <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[2500ms] [animation-iteration-count:infinite] taos:opacity-0"
-            >
-              <a
-                href="https://youtube.com/@mrma23"
-                class="justify-center items-center flex bg-white hover:bg-slate-200 text-red-600 ease-in-out duration-300 border-[3px] border-black p-5 shadow-md"
-                ><i class="fa-brands fa-youtube"></i>
-                <p class="text-xl text-center pl-4 font-semibold">
-                  YouTube | Muhammad Rifa
-                </p>
-              </a>
-            </div> -->
-            <!-- Discord -->
-            <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[3000ms] [animation-iteration-count:infinite] taos:opacity-0"
-            >
-              <a
-                href="#"
-                class="justify-center items-center flex border-[3px] border-black p-5 text-blue-800 bg-white hover:bg-slate-200 shadow-md"
-                ><i class="fa-brands fa-discord"></i>
-                <p class="text-xl text-center pl-4 font-semibold">
-                  Discord | Riffx#7293
-                </p>
-              </a>
-            </div>
-            <!-- Email -->
-            <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[3500ms] [animation-iteration-count:infinite] taos:opacity-0"
-            >
-              <a
-                href="mailto:rifamaulana243@gmail.com"
-                class="justify-center items-center flex border-[3px] border-black p-5 bg-white hover:bg-slate-200 shadow-md"
-              >
-                <i class="fa-brands fa-google"></i>
-                <p class="text-xl text-center pl-3 font-semibold">
-                  Email | rifamaulana243@gmail.com
-                </p>
-              </a>
-            </div>
-            <!-- LinkedIn -->
-            <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[3500ms] [animation-iteration-count:infinite] taos:opacity-0"
-            >
-              <a
-                href="https://www.linkedin.com/in/rifaaziz23/"
-                class="text-blue-600 justify-center items-center flex border-[3px] border-black p-5 bg-white hover:bg-slate-200 shadow-md"
-                ><i class="fa-brands fa-linkedin"></i>
-                <p class="text-xl text-center pl-3 font-semibold">LinkedIn</p>
-              </a>
-            </div>
-            <!-- Whatsapp -->
-            <div
-              class="mt-8 justify-center items-center w-80 lg:w-full mx-auto duration-[4000ms] [animation-iteration-count:infinite] taos:opacity-0"
-            >
-              <a
-                href="https://wa.me/+6283817388583"
-                class="justify-center items-center flex border-[3px] border-black p-5 bg-white hover:bg-slate-200 text-green-500 shadow-md"
-                ><i class="fa-brands fa-whatsapp"></i>
-                <p class="text-xl text-center font-semibold pl-4">WhatsApp</p>
-              </a>
-            </div>
-            <!-- sosmed end -->
-          </div>
-        </div>
-      </div>
-      <!-- Third Content/Contact End -->
       <!-- Suggestion start -->
       <form
         name="kotak-saran"
         action="#"
-        class="mt-28 lg:flex flex flex-col justify-center items-center"
+        class="mt-60 lg:flex flex flex-col justify-center items-center"
       >
         <h1 class="dark:text-white font-Lato text-4xl lg:text-5xl">
           Suggestion
@@ -632,15 +422,15 @@
         </div>
         <button
           id="btns"
-          class="dark:bg-slate-900 dark:hover:bg-slate-600 border-black mt-5 py-3 text-white px-6 bg-[#737f8c] hover:bg-slate-600 active:bg-slate-700 rounded-lg"
+          class="dark:bg-white font-semibold dark:hover:bg-slate-600 border-2 border-black mt-5 py-3 text-black px-6 bg-white hover:bg-gray-100 active:bg-slate-700 rounded-sm"
         >
           Submit
         </button>
       </form>
       <!-- Suggestion End -->
       <!-- Footer Start -->
-      <footer class="dark:bg-slate-900 py-3 w-full bg-[#737f8c] font-Poppins mt-10">
-        <p class="text-white text-center justify-center">
+      <footer class="dark:bg-white py-3 w-full border-t-2 border-black bg-white font-Poppins mt-10">
+        <p class="text-black text-center justify-center">
           &copy; 2023 Muhammad Rifa. All right reserved
         </p>
       </footer>
