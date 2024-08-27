@@ -111,7 +111,7 @@
       <!-- NavBar End -->
       <!-- Main Content Start -->
       <main
-        class="flex flex-col lg:flex-row-reverse justify-center items-center pt-[6rem] lg:pt-[8rem] pb-52 lg:justify-around lg:mx-36 lg:items-center"
+        class="flex flex-col lg:flex-row-reverse justify-center items-center pt-[6rem] lg:pt-[9rem] pb-52 lg:justify-around lg:mx-36 lg:items-center"
         id="home"
       >
         <img
@@ -127,7 +127,8 @@
             <span
               id="typewriter"
               class="font-Noto absolute block text-left font-normal w-[19rem] lg:w-[37rem] lg:pb-3 dark:text-white"
-            ></span>
+            >
+          </span>
           </h1>
           <div class="flex gap-4 items-center justify-center lg:justify-start mt-10 text-xl">
            <a class="hover:text-blue-600 dark:text-white dark:hover:text-blue-600" href="https://www.facebook.com/rifa.bestrong"><i class="fa-brands fa-facebook"></i></a> 
@@ -194,7 +195,7 @@
         <div class="pt-9">
           <div class="flex rounded-lg border-gray-100 py-3">
             <div
-              class="flex flex-col text-xs lg:text-lg w-96 gap-1 p-3 sm:gap-4 dark:text-white"
+              class="flex flex-col text-xs lg:text-lg min-w-full lg:w-[30rem] gap-1 p-3 sm:gap-4 dark:text-white"
             >
               <p class="font-Rubik">
                 Halo semuanya!!, Nama saya Muhammad Rifa Maulana Aziz saya lahir
@@ -382,11 +383,13 @@
           Suggestion
         </h1>
         <div class="mt-10 flex flex-col gap-1 justify-center items-center">
-          <label class="text-3xl dark:text-white" for="nama">Nama</label>
+          <!-- <label class="text-3xl dark:text-white" for="nama">Nama</label> -->
           <input
             type="text"
             name="nama"
+            placeholder=" Nama"
             id="nama"
+            autocomplete="off"
             class="border-2 border-black rounded"
           />
         </div>
@@ -394,30 +397,34 @@
         <div
           class="mt-5 flex flex-col gap-1 justify-center items-center lg:hidden"
         >
-          <label class="text-3xl dark:text-white" for="saran"
+          <!-- <label class="text-3xl dark:text-white" for="saran"
             >Saran & Kritik</label
-          >
+          > -->
           <textarea
             class="check rounded border-2 border-black"
             name="saran"
             id="saran"
             cols="30"
             rows="10"
+            autocomplete="off"
+            placeholder=" Saran & Kritik"
           ></textarea>
         </div>
         <!-- display on PC -->
         <div
           class="hidden lg:flex lg:flex-col lg:gap-1 lg:mt-10 lg:justify-center lg:items-center"
         >
-          <label class="text-3xl dark:text-white" for="saran"
+          <!-- <label class="text-3xl dark:text-white" for="saran"
             >Saran & Kritik</label
-          >
+          > -->
           <textarea
             class="check rounded border-2 border-black"
             name="saran2"
             id="saran2"
             cols="50"
             rows="10"
+            autocomplete="off"
+            placeholder=" Saran & Kritik"
           ></textarea>
         </div>
         <button

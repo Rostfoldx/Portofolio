@@ -1,4 +1,10 @@
-const words = ["Muhammad Rifa", "Web Developer", "FrontEnd Enthusiast"];
+const words = [
+  "Muhammad Rifa",
+  "Web Developer",
+  "FrontEnd Enthusiast",
+  "Colleger",
+  "Editor",
+];
 let i = 0;
 let j = 0;
 let currentWord = "";
