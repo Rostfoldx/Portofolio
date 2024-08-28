@@ -25,17 +25,12 @@
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
-        class="navbar dark:bg-black dark:border-b dark:border-white bg-white fixed w-full top-0 z-50"
+        class="navbar dark:bg-black bg-white fixed w-full top-0 z-50"
         id="nav"
       >
         <div class="container mx-auto flex justify-between items-center p-5">
-          <div class="p-2 font-semibold text-lg">
-            <label
-              for="mode"
-              class="font-Inter-700 cursor-pointer dark:text-white"
-              >M.R.M.A.</label
-            >
-            <input class="hidden" type="checkbox" id="mode" />
+          <div class="p-2 font-semibold dark:text-white text-lg">
+            M.R.M.A.
           </div>
           <button
             @click="open = !open"
@@ -126,7 +121,7 @@
             I am
             <span
               id="typewriter"
-              class="font-Noto absolute block text-left font-normal w-[19rem] lg:w-[37rem] lg:pb-3 dark:text-white"
+              class="font-Noto absolute block text-left ml-[-20px] lg:ml-0 font-normal w-[16rem] lg:w-[37rem] lg:pb-3 dark:text-white"
             >
           </span>
           </h1>
@@ -138,10 +133,7 @@
            <a class="hover:text-green-600 dark:text-white dark:hover:text-green-600" href="https://wa.me/+6283817388583"><i class="fa-brands fa-whatsapp"></i></a>
            <a class="hover:text-blue-800 dark:text-white dark:hover:text-blue-800" href="https://discordapp.com/users/812010556591833148"><i class="fa-brands fa-discord"></i></a>
           </div>
-          <p class="w-72 mt-4 dark:text-white">
-            I'm a Colleger, web developer, and an Editor based in Cianjur West
-            Java, Indonesia
-          </p>
+          
           
           <button
             class="flex w-[165px] mx-auto md:mx-0 mt-5 py-2 px-4 border-2 border-black transition-all duration-500 rounded-md gap-4 items-center hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
@@ -167,8 +159,22 @@
             >
           </button>
         </div>
+        
+        <!-- DarkMode Button -->
+        <div class="fixed w-10 h-10 bottom-6 right-4 lg:right-32 bg-black border-2 dark:bg-white border-black shadow-md rounded-full text-center">
+          <label
+          for="mode"
+          class="font-Inter-700 cursor-pointer dark:text-white"
+          >
+            <i class="fa-regular fa-sun mt-[10px] text-white dark:text-black"></i>
+          </label>
+          <input class="hidden" type="checkbox" id="mode" />
+        </div>
+        <!-- End -->
+        
       </main>
       <!-- Main Content End -->
+      <!-- Secondary Content Start -->
       <div
         id="about"
         class="dark:text-white pt-[115px] pb-[20px] text-4xl font-Quicksand font-semibold flex justify-center items-center gap-2"
@@ -176,7 +182,6 @@
         <span>About</span>
         <span>Me!</span>
       </div>
-      <!-- Secondary Content Start -->
       <div
         class="md:flex lg:flex lg:justify-evenly text-center items-center justify-center lg:gap-y-20 pb-7 duration-[1000ms] ease-[cubic-bezier(.47,0,.745,.715)] [animation-iteration-count:infinite] taos:opacity-0"
       >
@@ -212,7 +217,6 @@
           </div>
         </div>
       </div>
-
       <!-- Secondary Content End -->
       <!-- Project-Container -->
       <div class="flex flex-col items-center justify-center mt-60" id="project">

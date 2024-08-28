@@ -1,9 +1,9 @@
 const words = [
   "Muhammad Rifa",
-  "Web Developer",
-  "FrontEnd Enthusiast",
-  "Colleger",
-  "Editor",
+  "College Student",
+  "Web Enthusiast",
+  "FrontEnd Dev",
+  "IoT Enthusiast",
 ];
 let i = 0;
 let j = 0;
