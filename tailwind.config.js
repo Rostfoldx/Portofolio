@@ -3,7 +3,7 @@ module.exports = {
   content: {
     relative: true,
     transform: (content) => content.replace(/taos:/g, ""),
-    files: ["./index.html"],
+    files: ["./index.html", "./public/**/*.{html,js}"],
   },
   darkMode: "class",
   theme: {

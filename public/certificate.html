@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" type="image/icon type" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio | Certificate</title>
+  </head>
+  <body>
+    <!-- NAvBAr Start -->
+    <div
+      x-data="{ open: false }"
+      class="navbar dark:bg-black bg-white fixed w-full top-0 z-50"
+      id="nav"
+    >
+      <div class="container mx-auto flex justify-between items-center p-5">
+        <div class="p-2 font-semibold dark:text-white text-lg">M.R.M.A.</div>
+        <button
+          @click="open = !open"
+          class="lg:hidden text-black dark:text-white"
+          id="btnNav"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <div class="hidden lg:flex">
+          <ul class="menu lg:flex space-x-4 mr-10 gap-5">
+            <a
+              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
+              href="/index.html"
+              >Home
+              <span
+                class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+              ></span
+            ></a>
+            <a
+              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
+              href="/index.html"
+              >About
+              <span
+                class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+              ></span
+            ></a>
+            <a
+              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
+              href="/index.html"
+              >Project
+              <span
+                class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+              ></span
+            ></a>
+            <a
+              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
+              href="skill.html"
+              >Skill
+              <span
+                class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+              ></span
+            ></a>
+            <a
+              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
+              href="#"
+              >Certificate
+              <span
+                class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
+              ></span
+            ></a>
+          </ul>
+        </div>
+      </div>
+      <div x-show="open" class="lg:hidden">
+        <ul
+          class="menu dark:text-white bg-transparent p-4 justify-center items-center flex flex-col gap-2"
+        >
+          <a
+            class="text-black dark:text-white font-semibold hover:underline"
+            href="/index.html"
+            >Home</a
+          >
+          <a
+            class="text-black dark:text-white font-semibold hover:underline"
+            href="/index.html"
+            >About</a
+          >
+          <a
+            class="text-black dark:text-white font-semibold hover:underline"
+            href="/index.html"
+            >Project</a
+          >
+          <a
+            class="text-black dark:text-white font-semibold hover:underline"
+            href="skill.html"
+            >Skill</a
+          >
+          <a
+            class="text-black dark:text-white font-semibold hover:underline"
+            href="#"
+            >Certificate</a
+          >
+        </ul>
+      </div>
+    </div>
+    <!-- NavBar End -->
+    <main class="flex justify-center w-full h-full items-center">
+      <div class="mt-52 bg-white w-[20rem] h-[227px] border-[3px] border-black">
+        <img src="/img/sertif.jpg" alt="odc2023" />
+        <p class="text-center font-semibold text-xl">
+          October Digital Creativity 2023
+        </p>
+      </div>
+    </main>
+    <!-- Footer -->
+    <!-- <footer
+      class="dark:bg-white py-3 w-full border-t-2 border-black bg-white font-Poppins mt-10"
+    >
+      <p class="text-black text-center justify-center">
+        &copy; 2023 Muhammad Rifa. All right reserved
+      </p>
+    </footer> -->
+  </body>
+</html>
