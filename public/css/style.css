@@ -660,12 +660,20 @@ h1 {
   margin-top: 0.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mt-52{
+  margin-top: 13rem;
 }
 
 .mt-6{
@@ -698,18 +706,6 @@ h1 {
 
 .mt-\[7vh\]{
   margin-top: 7vh;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.mt-40{
-  margin-top: 10rem;
-}
-
-.mt-52{
-  margin-top: 13rem;
 }
 
 .block{
@@ -756,64 +752,12 @@ h1 {
   height: 14rem;
 }
 
-.h-\[5rem\]{
-  height: 5rem;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-\[10rem\]{
-  height: 10rem;
-}
-
-.h-\[15rem\]{
-  height: 15rem;
-}
-
-.h-\[13rem\]{
-  height: 13rem;
-}
-
-.h-\[14\.2rem\]{
-  height: 14.2rem;
-}
-
-.h-\[13\.2rem\]{
-  height: 13.2rem;
-}
-
-.h-\[13\.8rem\]{
-  height: 13.8rem;
-}
-
-.h-\[13\.9rem\]{
-  height: 13.9rem;
-}
-
-.h-\[225px\]{
-  height: 225px;
-}
-
-.h-\[230px\]{
-  height: 230px;
-}
-
-.h-\[229px\]{
-  height: 229px;
-}
-
-.h-\[228px\]{
-  height: 228px;
-}
-
 .h-\[227px\]{
   height: 227px;
 }
 
-.h-\[226px\]{
-  height: 226px;
+.h-full{
+  height: 100%;
 }
 
 .w-10{
@@ -1106,6 +1050,10 @@ h1 {
   padding-bottom: 4rem;
 }
 
+.pb-32{
+  padding-bottom: 8rem;
+}
+
 .pb-52{
   padding-bottom: 13rem;
 }
@@ -1140,34 +1088,6 @@ h1 {
 
 .pt-\[6rem\]{
   padding-top: 6rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pb-96{
-  padding-bottom: 24rem;
-}
-
-.pb-72{
-  padding-bottom: 18rem;
-}
-
-.pb-60{
-  padding-bottom: 15rem;
-}
-
-.pb-48{
-  padding-bottom: 12rem;
-}
-
-.pb-40{
-  padding-bottom: 10rem;
-}
-
-.pb-32{
-  padding-bottom: 8rem;
 }
 
 .text-left{
@@ -1323,68 +1243,44 @@ h1 {
   transition-delay: 300ms;
 }
 
-.delay-\[1000ms\]{
-  transition-delay: 1000ms;
-}
-
-.delay-\[1100ms\]{
-  transition-delay: 1100ms;
-}
-
-.delay-\[1200ms\]{
-  transition-delay: 1200ms;
-}
-
-.delay-\[1300ms\]{
-  transition-delay: 1300ms;
-}
-
-.delay-\[1400ms\]{
-  transition-delay: 1400ms;
+.delay-\[350ms\]{
+  transition-delay: 350ms;
 }
 
 .delay-\[400ms\]{
   transition-delay: 400ms;
 }
 
-.delay-\[500ms\]{
-  transition-delay: 500ms;
-}
-
-.delay-\[600ms\]{
-  transition-delay: 600ms;
-}
-
-.delay-\[700ms\]{
-  transition-delay: 700ms;
-}
-
-.delay-\[800ms\]{
-  transition-delay: 800ms;
-}
-
-.delay-\[900ms\]{
-  transition-delay: 900ms;
-}
-
-.delay-\[350ms\]{
-  transition-delay: 350ms;
-}
-
 .delay-\[450ms\]{
   transition-delay: 450ms;
+}
+
+.delay-\[500ms\]{
+  transition-delay: 500ms;
 }
 
 .delay-\[550ms\]{
   transition-delay: 550ms;
 }
 
+.delay-\[600ms\]{
+  transition-delay: 600ms;
+}
+
 .delay-\[650ms\]{
   transition-delay: 650ms;
 }
 
+.delay-\[700ms\]{
+  transition-delay: 700ms;
+}
+
 .delay-\[750ms\]{
   transition-delay: 750ms;
+}
+
+.delay-\[800ms\]{
+  transition-delay: 800ms;
 }
 
 .delay-\[850ms\]{
