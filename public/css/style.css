@@ -1303,6 +1303,50 @@ h1 {
   transition-duration: 600ms;
 }
 
+.duration-\[300ms\]{
+  transition-duration: 300ms;
+}
+
+.duration-\[350ms\]{
+  transition-duration: 350ms;
+}
+
+.duration-\[400ms\]{
+  transition-duration: 400ms;
+}
+
+.duration-\[450ms\]{
+  transition-duration: 450ms;
+}
+
+.duration-\[500ms\]{
+  transition-duration: 500ms;
+}
+
+.duration-\[550ms\]{
+  transition-duration: 550ms;
+}
+
+.duration-\[650ms\]{
+  transition-duration: 650ms;
+}
+
+.duration-\[700ms\]{
+  transition-duration: 700ms;
+}
+
+.duration-\[750ms\]{
+  transition-duration: 750ms;
+}
+
+.duration-\[800ms\]{
+  transition-duration: 800ms;
+}
+
+.duration-\[850ms\]{
+  transition-duration: 850ms;
+}
+
 .ease-\[cubic-bezier\(\.47\2c 0\2c \.745\2c \.715\)\]{
   transition-timing-function: cubic-bezier(.47,0,.745,.715);
 }
