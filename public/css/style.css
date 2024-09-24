@@ -635,6 +635,14 @@ h1 {
   z-index: 50;
 }
 
+.-z-10{
+  z-index: -10;
+}
+
+.z-10{
+  z-index: 10;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -758,6 +766,14 @@ h1 {
 
 .h-full{
   height: 100%;
+}
+
+.h-\[228px\]{
+  height: 228px;
+}
+
+.h-\[230px\]{
+  height: 230px;
 }
 
 .w-10{
@@ -1004,6 +1020,18 @@ h1 {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-contain{
+  background-size: contain;
+}
+
+.bg-auto{
+  background-size: auto;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .p-2{
@@ -1287,6 +1315,42 @@ h1 {
   transition-delay: 850ms;
 }
 
+.delay-\[310ms\]{
+  transition-delay: 310ms;
+}
+
+.delay-\[320ms\]{
+  transition-delay: 320ms;
+}
+
+.delay-\[330ms\]{
+  transition-delay: 330ms;
+}
+
+.delay-\[340ms\]{
+  transition-delay: 340ms;
+}
+
+.delay-\[360ms\]{
+  transition-delay: 360ms;
+}
+
+.delay-\[370ms\]{
+  transition-delay: 370ms;
+}
+
+.delay-\[380ms\]{
+  transition-delay: 380ms;
+}
+
+.delay-\[390ms\]{
+  transition-delay: 390ms;
+}
+
+.delay-\[410ms\]{
+  transition-delay: 410ms;
+}
+
 .\!duration-\[0ms\]{
   transition-duration: 0ms !important;
 }
@@ -1297,10 +1361,6 @@ h1 {
 
 .duration-\[1000ms\]{
   transition-duration: 1000ms;
-}
-
-.duration-\[600ms\]{
-  transition-duration: 600ms;
 }
 
 .duration-\[300ms\]{
@@ -1327,6 +1387,10 @@ h1 {
   transition-duration: 550ms;
 }
 
+.duration-\[600ms\]{
+  transition-duration: 600ms;
+}
+
 .duration-\[650ms\]{
   transition-duration: 650ms;
 }
@@ -1345,6 +1409,42 @@ h1 {
 
 .duration-\[850ms\]{
   transition-duration: 850ms;
+}
+
+.duration-\[310ms\]{
+  transition-duration: 310ms;
+}
+
+.duration-\[320ms\]{
+  transition-duration: 320ms;
+}
+
+.duration-\[330ms\]{
+  transition-duration: 330ms;
+}
+
+.duration-\[340ms\]{
+  transition-duration: 340ms;
+}
+
+.duration-\[360ms\]{
+  transition-duration: 360ms;
+}
+
+.duration-\[370ms\]{
+  transition-duration: 370ms;
+}
+
+.duration-\[380ms\]{
+  transition-duration: 380ms;
+}
+
+.duration-\[390ms\]{
+  transition-duration: 390ms;
+}
+
+.duration-\[410ms\]{
+  transition-duration: 410ms;
 }
 
 .ease-\[cubic-bezier\(\.47\2c 0\2c \.745\2c \.715\)\]{
@@ -1398,6 +1498,16 @@ h1 {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-purple-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
