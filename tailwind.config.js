@@ -19,6 +19,15 @@ module.exports = {
         Inter: ["Inter", "sans-serif"],
         Noto: ["Noto Serif Tibetan", "serif"],
       },
+      animation: {
+        blink: "blink 1s ease-in-out infinite",
+      },
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: "1" },
+        },
+      },
     },
   },
   plugins: [require("taos/plugin")],
