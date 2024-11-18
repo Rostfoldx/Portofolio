@@ -1190,11 +1190,6 @@ h1 {
   font-weight: 600;
 }
 
-.text-\[\#48C8AF\]{
-  --tw-text-opacity: 1;
-  color: rgb(72 200 175 / var(--tw-text-opacity));
-}
-
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1370,6 +1365,14 @@ h1 {
 
 .\[animation-iteration-count\:infinite\]{
   animation-iteration-count: infinite;
+}
+
+/* @layer components {
+
+} */
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes blink{
