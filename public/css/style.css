@@ -760,8 +760,20 @@ h1 {
   height: 230px;
 }
 
+.h-\[250px\]{
+  height: 250px;
+}
+
 .h-full{
   height: 100%;
+}
+
+.h-\[300px\]{
+  height: 300px;
+}
+
+.h-\[270px\]{
+  height: 270px;
 }
 
 .w-10{
@@ -852,6 +864,14 @@ h1 {
   width: 100%;
 }
 
+.w-\[300px\]{
+  width: 300px;
+}
+
+.w-\[270px\]{
+  width: 270px;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -936,6 +956,10 @@ h1 {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .scroll-smooth{
   scroll-behavior: smooth;
 }
@@ -1001,6 +1025,11 @@ h1 {
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
+.bg-slate-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
 }
@@ -1010,12 +1039,44 @@ h1 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\.\.\/img\/20\(Rifa\)\.jpeg\)\]{
+  background-image: url(../img/20(Rifa).jpeg);
+}
+
+.bg-\[url\(\.\/img\/20\(Rifa\)\.jpeg\)\]{
+  background-image: url(./img/20(Rifa).jpeg);
+}
+
+.bg-\[url\(\'\.\.\/img\/20\(Rifa\)\.jpeg\'\)\]{
+  background-image: url('../img/20(Rifa).jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/20\(Rifa\)\.jpeg\'\)\]{
+  background-image: url('./img/20(Rifa).jpeg');
+}
+
+.bg-\[url\(\'\/img\/20\(Rifa\)\.jpeg\'\)\]{
+  background-image: url('/img/20(Rifa).jpeg');
+}
+
 .bg-contain{
   background-size: contain;
 }
 
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-auto{
+  background-size: auto;
+}
+
 .bg-center{
   background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .p-2{
@@ -1202,6 +1263,10 @@ h1 {
 
 .opacity-0{
   opacity: 0;
+}
+
+.opacity-5{
+  opacity: 0.05;
 }
 
 .shadow-lg{
