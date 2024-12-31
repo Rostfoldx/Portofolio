@@ -8,6 +8,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      cursor: {
+        default: "url('../cursor/cursor-black-1.png'), default",
+        pointer: "url('../cursor/pointer-black-1.png'), pointer",
+      },
       fontFamily: {
         Lato: ["Lato", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],

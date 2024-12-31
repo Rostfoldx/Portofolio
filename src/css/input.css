@@ -23,3 +23,13 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+*,
+*:before,
+*:after {
+  @apply cursor-default;
+}
+a,
+button {
+  @apply cursor-pointer;
+}
