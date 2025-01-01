@@ -16,14 +16,16 @@
     <!-- NAvBAr Start -->
     <div
       x-data="{ open: false }"
-      class="navbar dark:bg-black bg-white fixed w-full top-0 z-50"
+      class="navbar dark:bg-[#00111A] bg-transparent left-[10%] lg:left-[15rem] fixed w-[80%] lg:w-8/12 rounded-xl top-5 z-50"
       id="nav"
     >
       <div class="container mx-auto flex justify-between items-center p-5">
-        <div class="p-2 font-semibold dark:text-white text-lg">M.R.M.A.</div>
+        <div class="p-2 font-semibold dark:text-[#48C8AF] text-lg">
+          M.R.M.A.
+        </div>
         <button
           @click="open = !open"
-          class="lg:hidden text-black dark:text-white"
+          class="lg:hidden text-black dark:text-[#48C8AF]"
           id="btnNav"
         >
           <svg
@@ -44,7 +46,7 @@
         <div class="hidden lg:flex">
           <ul class="menu lg:flex space-x-4 mr-10 gap-5">
             <a
-              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
+              class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
               href="/index.html"
               >Home
               <span
@@ -52,23 +54,23 @@
               ></span
             ></a>
             <a
-              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
-              href="/index.html"
+              class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
+              href="/index.html#about"
               >About
               <span
                 class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
               ></span
             ></a>
             <a
-              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
-              href="/index.html"
+              class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
+              href="/index.html#project"
               >Project
               <span
                 class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
               ></span
             ></a>
             <a
-              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
+              class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
               href="#"
               >Skill
               <span
@@ -76,8 +78,8 @@
               ></span
             ></a>
             <a
-              class="group transition text-black dark:text-white font-semibold text-lg active:text-white"
-              href="certificate.html"
+              class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
+              href="./certificate.html"
               >Certificate
               <span
                 class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black mt-1"
@@ -91,28 +93,28 @@
           class="menu dark:text-white bg-transparent p-4 justify-center items-center flex flex-col gap-2"
         >
           <a
-            class="text-black dark:text-white font-semibold hover:underline"
+            class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
             href="/index.html"
             >Home</a
           >
           <a
-            class="text-black dark:text-white font-semibold hover:underline"
-            href="/index.html"
+            class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
+            href="/index.html#about"
             >About</a
           >
           <a
-            class="text-black dark:text-white font-semibold hover:underline"
-            href="/index.html"
+            class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
+            href="/index.html#project"
             >Project</a
           >
           <a
-            class="text-black dark:text-white font-semibold hover:underline"
+            class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
             href="#"
             >Skill</a
           >
           <a
-            class="text-black dark:text-white font-semibold hover:underline"
-            href="certificate.html"
+            class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
+            href="./certificate.html"
             >Certificate</a
           >
         </ul>
