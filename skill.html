@@ -296,14 +296,19 @@
       </section>
     </main>
     <!-- Main End -->
-    <!-- Footer -->
+    <!-- Footer Start -->
     <footer
-      class="dark:bg-white py-3 w-full border-t-2 border-black bg-white font-Poppins mt-20"
+      class="py-3 w-full border-t-2 border-black bg-white font-Poppins mt-10"
     >
       <p class="text-black text-center justify-center">
-        &copy; 2023 Muhammad Rifa. All right reserved
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Muhammad Rifa. All right reserved
       </p>
     </footer>
+    <!-- Footer End -->
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
     <script type="module" src="../custom/nav.js"></script>
     <script type="module" src="./custom/noTouch.js"></script>
