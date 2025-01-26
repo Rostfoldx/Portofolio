@@ -25,7 +25,7 @@
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
-        class="navbar dark:bg-[#00111A] bg-transparent left-[10%] lg:left-[15rem] fixed w-[80%] lg:w-8/12 rounded-xl top-5 z-50"
+        class="navbar dark:bg-[#00111A] bg-transparent fixed w-[100%] z-50"
         id="nav"
       >
         <div class="container mx-auto flex justify-between items-center p-5">
@@ -226,7 +226,7 @@
         <div class="pt-9">
           <div class="flex rounded-lg border-gray-100 py-3">
             <div
-              class="flex flex-col text-xs lg:text-lg min-w-full lg:w-[30rem] gap-1 p-3 sm:gap-4 dark:text-[#48C8AF]"
+              class="flex flex-col text-md w-[25rem] text-start mx-auto lg:text-lg max-w-full lg:w-[30rem] gap-3 p-3 sm:gap-4 dark:text-[#48C8AF]"
             >
               <p class="font-Rubik">
                 Halo semuanya!!, Nama saya Muhammad Rifa Maulana Aziz saya lahir
@@ -412,50 +412,50 @@
         <h1 class="dark:text-[#48C8AF] font-Lato text-4xl lg:text-5xl">
           Suggestion
         </h1>
-        <div class="mt-10 flex flex-col gap-1 justify-center items-center">
-          <!-- <label class="text-3xl dark:text-white" for="nama">Nama</label> -->
+        <div class="mt-10 flex flex-col gap-1">
+          <label class="text-xl dark:text-white" for="nama">Nama</label>
           <input
             type="text"
             name="nama"
-            placeholder=" Nama"
+            placeholder="Masukan Nama"
             id="nama"
             autocomplete="off"
-            class="border-2 border-black rounded"
+            class="border-2 border-black rounded w-96 pl-1"
           />
         </div>
         <!-- Display on Mobile -->
         <div
-          class="mt-5 flex flex-col gap-1 justify-center items-center lg:hidden"
+          class="mt-5 flex flex-col gap-1  lg:hidden"
         >
-          <!-- <label class="text-3xl dark:text-white" for="saran"
+          <label class="text-xl dark:text-white" for="saran"
             >Saran & Kritik</label
-          > -->
+          >
           <textarea
-            class="check rounded border-2 border-black"
+            class="check rounded border-2 border-black pl-1"
             name="saran"
             id="saran"
-            cols="30"
-            rows="10"
+            cols="50"
+            rows="5"
             autocomplete="off"
-            placeholder=" Saran & Kritik"
+            placeholder="Saran & Kritik"
           ></textarea>
         </div>
         <!-- display on PC -->
         <div
-          class="hidden lg:flex lg:flex-col lg:gap-1 lg:mt-10 lg:justify-center lg:items-center"
+          class="hidden lg:flex lg:flex-col lg:gap-1 lg:mt-10"
         >
-          <!-- <label class="text-3xl dark:text-white" for="saran"
-            >Saran & Kritik</label
-          > -->
-          <textarea
-            class="check rounded border-2 border-black"
-            name="saran2"
-            id="saran2"
-            cols="50"
-            rows="10"
-            autocomplete="off"
-            placeholder=" Saran & Kritik"
-          ></textarea>
+        <label class="text-xl dark:text-white" for="saran"
+        >Saran & Kritik</label
+      >
+      <textarea
+        class="check rounded border-2 border-black pl-1"
+        name="saran2"
+        id="saran2"
+        cols="50"
+        rows="5"
+        autocomplete="off"
+        placeholder="Saran & Kritik"
+      ></textarea>
         </div>
         <button
           id="btns"
@@ -482,6 +482,6 @@
     <script type="module" src="./custom/dark.js"></script>
     <script type="module" src="./custom/form.js"></script>
     <script type="module" src="./custom/type.js"></script>
-    <script type="module" src="./custom/noTouch.js"></script>
+    <!-- <script type="module" src="./custom/noTouch.js"></script> -->
   </body>
 </html>
