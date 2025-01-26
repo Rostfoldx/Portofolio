@@ -21,20 +21,20 @@
     <title>Portfolio | Home</title>
   </head>
   <body>
-    <div class="dark:bg-[#00111A] h-full w-full bg-white">
+    <div class="dark:bg-[#0D1B2A] h-full w-full bg-white">
       <!-- NAvBAr Start -->
       <div
         x-data="{ open: false }"
-        class="navbar dark:bg-[#00111A] bg-transparent fixed w-[100%] z-50"
+        class="navbar dark:bg-[#0D1B2A] bg-transparent fixed w-[100%] z-50"
         id="nav"
       >
         <div class="container mx-auto flex justify-between items-center p-5">
-          <div class="p-2 font-semibold dark:text-[#48C8AF] text-lg">
+          <div class="p-2 font-semibold dark:text-[#DDE6ED] text-lg">
             M.R.M.A.
           </div>
           <button
             @click="open = !open"
-            class="lg:hidden text-black dark:text-[#48C8AF]"
+            class="lg:hidden text-black dark:text-[#DDE6ED]"
             id="btnNav"
           >
             <svg
@@ -55,7 +55,7 @@
           <div class="hidden lg:flex">
             <ul class="menu lg:flex space-x-4 mr-10 gap-5">
               <a
-                class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
+                class="group transition text-black dark:text-[#DDE6ED] font-semibold text-lg active:text-white"
                 href="#home"
                 >Home
                 <span
@@ -63,7 +63,7 @@
                 ></span
               ></a>
               <a
-                class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
+                class="group transition text-black dark:text-[#DDE6ED] font-semibold text-lg active:text-white"
                 href="#about"
                 >About
                 <span
@@ -71,7 +71,7 @@
                 ></span
               ></a>
               <a
-                class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
+                class="group transition text-black dark:text-[#DDE6ED] font-semibold text-lg active:text-white"
                 href="#project"
                 >Project
                 <span
@@ -79,7 +79,7 @@
                 ></span
               ></a>
               <a
-                class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
+                class="group transition text-black dark:text-[#DDE6ED] font-semibold text-lg active:text-white"
                 href="skill.html"
                 >Skill
                 <span
@@ -87,7 +87,7 @@
                 ></span
               ></a>
               <a
-                class="group transition text-black dark:text-[#48C8AF] font-semibold text-lg active:text-white"
+                class="group transition text-black dark:text-[#DDE6ED] font-semibold text-lg active:text-white"
                 href="certificate.html"
                 >Certificate
                 <span
@@ -102,27 +102,27 @@
             class="menu dark:text-white bg-transparent p-4 justify-center items-center flex flex-col gap-2"
           >
             <a
-              class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
+              class="text-black dark:text-[#DDE6ED] font-semibold hover:underline"
               href="#home"
               >Home</a
             >
             <a
-              class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
+              class="text-black dark:text-[#DDE6ED] font-semibold hover:underline"
               href="#about"
               >About</a
             >
             <a
-              class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
+              class="text-black dark:text-[#DDE6ED] font-semibold hover:underline"
               href="#project"
               >Project</a
             >
             <a
-              class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
+              class="text-black dark:text-[#DDE6ED] font-semibold hover:underline"
               href="skill.html"
               >Skill</a
             >
             <a
-              class="text-black dark:text-[#48C8AF] font-semibold hover:underline"
+              class="text-black dark:text-[#DDE6ED] font-semibold hover:underline"
               href="certificate.html"
               >Certificate</a
             >
@@ -132,38 +132,41 @@
       <!-- NavBar End -->
       <!-- Main Content Start -->
       <main
-        class="flex flex-col lg:flex-row-reverse justify-center items-center pt-[6rem] lg:pt-[9rem] pb-52 lg:justify-around lg:mx-36 lg:items-center"
+        class="flex flex-col lg:flex-row-reverse gap-5 justify-center items-center pt-[6rem] lg:pt-[9rem] pb-52 lg:justify-around lg:mx-36 lg:items-center"
         id="home"
       >
+      <figure class="hover:pause animate-rotate flex flex-col justify-center items-center">
         <img
           src="../img/rifa.jpg"
           alt="rifaganteng"
-          class="w-[250px] lg:w-[300px] rounded-full shadow-lg relative mt-[7vh]"
+          class="w-[250px] lg:w-[300px] outline outline-offset-4 shadow-lg relative mt-[7vh]"
         />
+        <figcaption class="mt-2 text-center">Muhammmad Rifa Maulana Aziz</figcaption>
+      </figure>
         <div class="flex flex-col text-center lg:text-left relative top-10">
           <h1
-            class="text-3xl relative top-[-1rem] font-Noto lg:text-4xl dark:text-[#48C8AF]"
+            class="text-3xl relative top-[-1rem] font-Noto lg:text-4xl dark:text-[#DDE6ED]"
           >
             I am
             <span
               id="typewriter"
               class="font-Noto absolute block text-left after:content-['|']
-              after:animate-blink ml-[-20px] lg:ml-0 font-normal w-[16rem] lg:w-[37rem] lg:pb-3 dark:text-[#48C8AF]"
+              after:animate-blink ml-[-20px] lg:ml-0 font-normal w-[16rem] lg:w-[37rem] lg:pb-3 dark:text-[#DDE6ED]"
             >
           </span>
           </h1>
           <div class="flex gap-4 items-center justify-center lg:justify-start mt-10 text-xl">
-           <a class="hover:text-blue-600 dark:text-[#48C8AF] dark:hover:text-blue-600" href="https://www.facebook.com/rifa.bestrong"><i class="fa-brands fa-facebook"></i></a> 
-           <a class="hover:text-red-600 dark:text-[#48C8AF] dark:hover:text-red-600" href="https://www.instagram.com/ivaraz_"><i class="fa-brands fa-instagram"></i></a>
-           <a class="hover:text-red-500 dark:text-[#48C8AF] dark:hover:text-red-500" href="mailto:rifamaulana243@gmail.com"><i class="fa-brands fa-google"></i></a>
-           <a class="hover:text-blue-500 dark:text-[#48C8AF] dark:hover:text-blue-500" href="https://www.linkedin.com/in/rifaaziz23/"><i class="fa-brands fa-linkedin"></i></a>
-           <a class="hover:text-blue-800 dark:text-[#48C8AF] dark:hover:text-blue-800" href="https://discordapp.com/users/812010556591833148"><i class="fa-brands fa-discord"></i></a>
-           <a class="hover:text-purple-500 dark:text-[#48C8AF] dark:hover:text-blue-800" href="https://github.com/ivaraz/"><i class="fa-brands fa-github"></i></a>
+           <a class="hover:text-blue-600 dark:text-[#DDE6ED] dark:hover:text-blue-600" href="https://www.facebook.com/rifa.bestrong"><i class="fa-brands fa-facebook"></i></a> 
+           <a class="hover:text-red-600 dark:text-[#DDE6ED] dark:hover:text-red-600" href="https://www.instagram.com/ivaraz_"><i class="fa-brands fa-instagram"></i></a>
+           <a class="hover:text-red-500 dark:text-[#DDE6ED] dark:hover:text-red-500" href="mailto:rifamaulana243@gmail.com"><i class="fa-brands fa-google"></i></a>
+           <a class="hover:text-blue-500 dark:text-[#DDE6ED] dark:hover:text-blue-500" href="https://www.linkedin.com/in/rifaaziz23/"><i class="fa-brands fa-linkedin"></i></a>
+           <a class="hover:text-blue-800 dark:text-[#DDE6ED] dark:hover:text-blue-800" href="https://discordapp.com/users/812010556591833148"><i class="fa-brands fa-discord"></i></a>
+           <a class="hover:text-purple-500 dark:text-[#DDE6ED] dark:hover:text-blue-800" href="https://github.com/ivaraz/"><i class="fa-brands fa-github"></i></a>
           </div>
           
           
           <button
-            class="flex w-[165px] mx-auto md:mx-0 mt-5 py-2 px-4 border-2 border-black transition-all duration-500 rounded-md gap-4 items-center hover:bg-black hover:text-white dark:border-[#48C8AF] dark:hover:bg-white dark:hover:text-black"
+            class="flex w-[165px] mx-auto md:mx-0 mt-5 py-2 px-4 border-2 border-black transition-all duration-500 rounded-md gap-4 items-center hover:bg-black hover:text-white dark:border-[#DDE6ED] dark:hover:bg-white dark:hover:text-black"
           >
             <svg
               stroke="currentColor"
@@ -175,23 +178,23 @@
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
-              class="dark:text-[#48C8AF]"
+              class="dark:text-[#DDE6ED]"
             >
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            <a href="./img/mrifa.pdf" class="dark:text-[#48C8AF] " download
+            <a href="./img/mrifa.pdf" class="dark:text-[#DDE6ED] " download
               >Download CV</a
             >
           </button>
         </div>
         
         <!-- DarkMode Button -->
-        <div class="fixed w-10 h-10 bottom-6 right-4 lg:right-32 bg-black border-2 dark:bg-white border-black shadow-md rounded-full text-center">
+        <div class="fixed w-10 z-50 h-10 bottom-6 right-4 lg:right-32 bg-black border-2 dark:bg-white border-black shadow-md rounded-full text-center">
           <label
           for="mode"
-          class="font-Inter-700 cursor-pointer dark:text-[#48C8AF]"
+          class="font-Inter-700 cursor-pointer dark:text-[#DDE6ED]"
           >
             <i class="fa-regular fa-sun mt-[10px] text-white dark:text-black"></i>
           </label>
@@ -204,7 +207,7 @@
       <!-- Secondary Content Start -->
       <div
         id="about"
-        class="dark:text-[#48C8AF] pt-[115px] pb-[20px] text-4xl font-Quicksand font-semibold flex justify-center items-center gap-2"
+        class="dark:text-[#DDE6ED] pt-[115px] pb-[20px] text-4xl font-Quicksand font-semibold flex justify-center items-center gap-2"
       >
         <span>About</span>
         <span>Me!</span>
@@ -219,14 +222,14 @@
           
         </div>
           
-          <i class="font-normal text-base font-Lora dark:text-[#48C8AF]"
+          <i class="font-normal text-base font-Lora dark:text-[#DDE6ED]"
             >"Be The Beast Among The Best!"</i
           >
         </div>
         <div class="pt-9">
           <div class="flex rounded-lg border-gray-100 py-3">
             <div
-              class="flex flex-col text-md w-[25rem] text-start mx-auto lg:text-lg max-w-full lg:w-[30rem] gap-3 p-3 sm:gap-4 dark:text-[#48C8AF]"
+              class="flex flex-col text-md w-[25rem] text-start mx-auto lg:text-lg max-w-full lg:w-[30rem] gap-3 p-3 sm:gap-4 dark:text-[#DDE6ED]"
             >
               <p class="font-Rubik">
                 Halo semuanya!!, Nama saya Muhammad Rifa Maulana Aziz saya lahir
@@ -247,7 +250,7 @@
       <!-- Project-Container -->
       <div class="flex flex-col items-center justify-center mt-60" id="project">
         <p
-          class="dark:text-[#48C8AF] font-semibold text-3xl lg:text-4xl pb-16 font-Outfit text-center"
+          class="dark:text-[#DDE6ED] font-semibold text-3xl lg:text-4xl pb-16 font-Outfit text-center"
         >
           Dummy Projects
         </p>
@@ -261,7 +264,7 @@
             ></span>
 
             <div
-              class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+              class="relative flex h-full transform items-end border-2 border-black bg-white dark:bg-[#778DA9] dark:text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
             >
               <div
                 class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 "
@@ -298,7 +301,7 @@
             ></span>
 
             <div
-              class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+              class="relative flex h-full transform items-end border-2 border-black bg-white dark:bg-[#778DA9] dark:text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
             >
               <div
                 class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 "
@@ -335,7 +338,7 @@
             ></span>
 
             <div
-              class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+              class="relative flex h-full transform items-end border-2 border-black bg-white dark:bg-[#778DA9] dark:text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
             >
               <div
                 class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 "
@@ -372,7 +375,7 @@
             ></span>
 
             <div
-              class="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+              class="relative flex h-full transform items-end border-2 border-black bg-white dark:bg-[#778DA9] dark:text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
             >
               <div
                 class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 "
@@ -407,34 +410,34 @@
       <form
         name="kotak-saran"
         action="#"
-        class="mt-60 lg:flex flex flex-col justify-center items-center"
+        class="mt-60 lg:flex flex flex-col font-Outfit justify-center items-center"
       >
-        <h1 class="dark:text-[#48C8AF] font-Lato text-4xl lg:text-5xl">
+        <h1 class="dark:text-[#DDE6ED] text-4xl lg:text-5xl">
           Suggestion
         </h1>
-        <div class="mt-10 flex flex-col gap-1">
-          <label class="text-xl dark:text-white" for="nama">Nama</label>
+        <div class="mt-10 flex flex-col ">
+          <label class="text-xl dark:text-[#DDE6ED]" for="nama">Nama</label>
           <input
             type="text"
             name="nama"
             placeholder="Masukan Nama"
             id="nama"
             autocomplete="off"
-            class="border-2 border-black rounded w-96 pl-1"
+            class="border-2 border-black rounded w-[18rem] lg:w-96 pl-1 dark:bg-[#778DA9] dark:placeholder:text-white"
           />
         </div>
         <!-- Display on Mobile -->
         <div
           class="mt-5 flex flex-col gap-1  lg:hidden"
         >
-          <label class="text-xl dark:text-white" for="saran"
+          <label class="text-xl dark:text-[#DDE6ED]" for="saran"
             >Saran & Kritik</label
           >
           <textarea
-            class="check rounded border-2 border-black pl-1"
+            class="check rounded border-2 border-black pl-1 dark:bg-[#778DA9] dark:placeholder:text-white"
             name="saran"
             id="saran"
-            cols="50"
+            cols="35"
             rows="5"
             autocomplete="off"
             placeholder="Saran & Kritik"
@@ -444,14 +447,14 @@
         <div
           class="hidden lg:flex lg:flex-col lg:gap-1 lg:mt-10"
         >
-        <label class="text-xl dark:text-white" for="saran"
+        <label class="text-xl dark:text-[#DDE6ED]" for="saran"
         >Saran & Kritik</label
       >
       <textarea
-        class="check rounded border-2 border-black pl-1"
+        class="check rounded border-2 border-black pl-1 dark:bg-[#778DA9] dark:text-white dark:placeholder:text-white"
         name="saran2"
         id="saran2"
-        cols="50"
+        cols="45"
         rows="5"
         autocomplete="off"
         placeholder="Saran & Kritik"
@@ -459,19 +462,25 @@
         </div>
         <button
           id="btns"
-          class="dark:bg-white font-semibold dark:hover:bg-slate-600 border-2 border-black mt-5 py-3 text-black px-6 bg-white hover:bg-gray-100 active:bg-slate-700 rounded-sm"
+          class="dark:bg-[#E0E1DD] font-semibold dark:hover:bg-slate-600 border-2 border-black mt-5 py-3 text-black px-6 bg-white hover:bg-gray-100 active:bg-slate-700 rounded-sm"
         >
           Submit
         </button>
       </form>
       <!-- Suggestion End -->
       <!-- Footer Start -->
-      <footer class="dark:bg-[#48C8AF] py-3 w-full border-t-2 border-black bg-white font-Poppins mt-10">
-        <p class="text-black text-center justify-center">
+      <footer class="dark:bg-[#1B263B] text-sm lg:text-lg py-3 flex lg:flex gap-1 lg:gap-2 lg:flex-row flex-col justify-center items-center w-full border-t-2 border-black bg-white text-black dark:text-white font-Poppins mt-10">
+        <div>
           &copy; 2022 -
           <span class="year"></span> 
-          Muhammad Rifa. All right reserved
-        </p>
+        </div>
+        <div class="flex gap-1">
+          <p class="flex gap-0">
+            Muhammad Rifa <span class="lg:flex hidden"> . </span>
+          </p>
+          <p class="lg:hidden">Maulana Aziz</p>
+        </div>
+        <p>All right reserved</p>
       </footer>
       <!-- Footer End -->
     </div>

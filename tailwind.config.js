@@ -25,11 +25,16 @@ module.exports = {
       },
       animation: {
         blink: "blink 1s ease-in-out infinite",
+        rotate: "rotate 1s ease-in-out infinite alternate",
       },
       keyframes: {
         blink: {
           "0%, 100%": { opacity: "0" },
           "50%": { opacity: "1" },
+        },
+        rotate: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
         },
       },
     },
