@@ -876,12 +876,9 @@ h1 {
   max-width: 100%;
 }
 
-.origin-center{
-  transform-origin: center;
-}
-
-.origin-left{
-  transform-origin: left;
+.rotate-6{
+  --tw-rotate: 6deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-\[0\.6\]{
@@ -892,20 +889,6 @@ h1 {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes rotate{
-  0%, 100%{
-    transform: rotate(-3deg);
-  }
-
-  50%{
-    transform: rotate(3deg);
-  }
-}
-
-.animate-rotate{
-  animation: rotate 1s ease-in-out infinite alternate;
 }
 
 .cursor-pointer{
@@ -1445,10 +1428,6 @@ button{
 
 .hover\:underline:hover{
   text-decoration-line: underline;
-}
-
-.hover\:pause:hover {
-  animation-play-state: paused;
 }
 
 .focus\:scroll-auto:focus{
